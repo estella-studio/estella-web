@@ -19,13 +19,22 @@ body
     text-decoration: none;
     background-color: rgb(36, 80, 65);
 }
+.name
+{
+    margin: 30px;
+}
 .name img
 {
-    margin-top: 50px;
+    margin: 40px;
     border-radius: 10%;
     box-shadow: 0px 0px 10px black;
     width: 100px;
     height: auto;
+}
+.description
+{
+    padding: 30px;
+    font-size: 10px;
 }
 .screenshots img
 {
@@ -36,18 +45,22 @@ body
 }
 .feature
 {
-    margin-left: 30px;
+    margin: 30px;
     text-align: left;
 }
 ul.feature-list
 {
     display: inline-block;
 }
+#game-store
+{
+    margin: 30px;
+}
 #game-store img
 {
     padding: 5px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     width: auto;
     height: 50px;
 }
