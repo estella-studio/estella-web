@@ -13,6 +13,12 @@ nav
     color: rgb(255, 255, 255);
     background-color: rgb(36, 80, 65);
 }
+.name img
+{
+    padding-top: 50px;
+    width: 100px;
+    height: auto;
+}
 .screenshots img
 {
     width: 50%;
