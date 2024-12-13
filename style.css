@@ -25,6 +25,12 @@ nav
     width: 50%;
     height: auto;
 }
+.game-store img
+{
+    padding: 5px;
+    width: auto;
+    height: 50px;
+}
 footer
 {
     color: rgb(255, 255, 255);
