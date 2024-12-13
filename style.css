@@ -11,6 +11,7 @@ body
 nav
 {
     color: rgb(255, 255, 255);
+    text-decoration: inherit;
     background-color: rgb(36, 80, 65);
 }
 .name img
