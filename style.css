@@ -14,8 +14,8 @@ body
 }
 nav
 {
-    color: rgb(255, 255, 255);
-    text-decoration: inherit;
+    padding: 10px;
+    color: white;
     background-color: rgb(36, 80, 65);
 }
 .name img
@@ -45,11 +45,14 @@ ul.feature-list
 .game-store img
 {
     padding: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     width: auto;
     height: 50px;
 }
 footer
 {
+    padding: 10px;
     color: rgb(255, 255, 255);
     background-color: rgb(45, 105, 85);
 }
