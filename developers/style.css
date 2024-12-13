@@ -1,0 +1,16 @@
+body
+{
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(251, 255, 239, 0.877);
+}
+nav
+{
+    color: rgb(255, 255, 255);
+    text-decoration: inherit;
+    background-color: rgb(36, 80, 65);
+}
