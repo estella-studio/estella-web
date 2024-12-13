@@ -15,8 +15,18 @@
     <body>
         <div class="navigation-bar">
             <nav>
-                <t>Home</t>
-                <t>About</t>
+                <a
+                  href="./"
+                  title="Home"
+                  style="color: inherit; text-decoration: none;"
+                  >Home
+                </a>
+                <a
+                  href="#about"
+                  title="About"
+                  style="color: inherit; text-decoration: none;"
+                  >About
+                </a>
                 <a
                   href="./developers"
                   title="Developers"
@@ -24,8 +34,20 @@
                   target="_blank"
                   >Developers
                 </a>
-                <t>Dev-Log</t>
-                <t>Links</t>
+                <a
+                  href="./dev-log"
+                  title="Developers"
+                  style="color: inherit; text-decoration: none;"
+                  target="_blank"
+                  >Developers
+                </a>
+                <a
+                  href="#game-store"
+                  title="Links"
+                  style="color: inherit; text-decoration: none;"
+                  >Links
+                </a>
+                </div>
             </nav>
         </div>
         <main>
@@ -82,7 +104,7 @@
                     <li>Game can be resumed</li>
                 </ul>
             </div>
-            <div class="game-store">
+            <div id="game-store">
                 <h2>Get gameName</h2>
                 <a
                   href="https://store.steampowered.com/"
@@ -123,7 +145,9 @@
             </div>
         </main>
         <footer>
-            <p>gameName Copyright © 2024 by Estella Studio</p>
+            <div id="about">
+                <p>gameName Copyright © 2024 by Estella Studio</p>
+            </div>
         </footer>
     </body->
 </html>

@@ -12,10 +12,11 @@ body
     margin-right: 0px;
     background-color: rgba(251, 255, 239, 0.877);
 }
-nav
+.navigation-bar
 {
     padding: 10px;
     color: white;
+    text-decoration: none;
     background-color: rgb(36, 80, 65);
 }
 .name img
@@ -42,7 +43,7 @@ ul.feature-list
 {
     display: inline-block;
 }
-.game-store img
+#game-store img
 {
     padding: 5px;
     padding-top: 25px;
