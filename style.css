@@ -25,6 +25,15 @@ nav
     width: 50%;
     height: auto;
 }
+.feature
+{
+    margin-left: 30px;
+    text-align: left;
+}
+ul.feature-list
+{
+    display: inline-block;
+}
 .game-store img
 {
     padding: 5px;
