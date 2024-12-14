@@ -1,3 +1,13 @@
+@font-face
+{
+    font-family: "Funnel Sans";
+    src: url(assets/fonts/funnel-sans/static/FunnelSans-SemiBold.ttf);
+}
+@font-face
+{
+    font-family: "Cormorant Garamond";
+    src: url(assets/fonts/cormorant-garamond/CormorantGaramond-SemiBold.ttf);
+}
 body
 {
     font-family: "Funnel Sans", sans-serif;
@@ -30,12 +40,19 @@ body
     width: auto;
     height: 25px;
 }
-.dropdown
+.estella-studio-text
 {
-    position: relative;
+    padding-left: 15px;
+    font-size: 15px;
+    font-family: "Cormorant Garamond";
+    float: left;
+}
+.about
+{
+    position: center;
     display: inline-block;
 }
-.dropdown-content
+.about-content
 {
     border-radius: 5px;
     display: none;
@@ -45,7 +62,7 @@ body
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-.dropdown-content a
+.about-content a
 {
     color: black;
     padding: 12px 16px;
@@ -53,12 +70,12 @@ body
     display: block;
     text-align: left;
 }
-.dropdown-content a:hover
+.about-content a:hover
 {
     background-color: rgb(99, 240, 141);
     border-radius: inherit;
 }
-.dropdown:hover .dropdown-content
+.about:hover .about-content
 {
     display: block;
 }
