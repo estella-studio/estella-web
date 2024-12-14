@@ -2,6 +2,8 @@ name: Convert Markdown to HTML
 
 on:
   push:
+    branches:
+      - '**'
     paths:
       - '*.md'
 
