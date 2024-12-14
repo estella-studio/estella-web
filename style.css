@@ -5,6 +5,7 @@ body
     font-weight: 600;
     font-style: normal;
     text-decoration: none;
+    text-shadow: 0px 0px 1px rgb(255, 254, 187);
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -14,10 +15,52 @@ body
 }
 .navigation-bar
 {
-    padding: 10px;
+    position: relative;
+    height: 25px;
+    padding: 15px;
     color: white;
     text-decoration: none;
-    background-color: rgb(36, 80, 65);
+    background-color: rgb(135, 199, 99);
+}
+.estella-logo
+{
+    float: left;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px white;
+    width: auto;
+    height: 25px;
+}
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content
+{
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    background-color: rgb(144, 255, 218);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover
+{
+    background-color: rgb(99, 240, 141);
+    border-radius: inherit;
+}
+.dropdown:hover .dropdown-content
+{
+    display: block;
 }
 .name
 {
@@ -66,7 +109,7 @@ ul.feature-list
 }
 footer
 {
-    padding: 10px;
+    padding: 15px;
     color: rgb(255, 255, 255);
     background-color: rgb(45, 105, 85);
 }
