@@ -34,8 +34,17 @@
                     <a href="#game-store" title="Links" style="color: inherit; text-decoration: none;">Links</a>
                 </nav>
             </div>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
         </div>
         <main>
+            <div id="mobile-menu" class="mobile-menu"> <!-- add mobile menu -->
+                <a href="./" title="Home">Home</a>
+                <a href="#about" title="About">About</a>
+                <a href="./dev-log" title="Dev Log" target="_blank">Dev Log</a>
+                <a href="#game-store" title="Links">Links</a>
+            </div>
             <div class="name">
                 <img src="assets/pictures/main-page/logo.jpg" alt="HackerRank"/>
                 <h1>gameName</h1>
@@ -134,5 +143,19 @@
                 <p>gameName Copyright © 2024 by Estella Studio</p>
             </div>
         </footer>
+        <script>
+            function toggleMenu()
+            {
+                var menu = document.getElementById("mobile-menu");
+                if (menu.style.display === "block")
+                {
+                    menu.style.display = "none";
+                }
+                else
+                {
+                    menu.style.display = "block";
+                }
+            }
+        </script
     </body->
 </html>
