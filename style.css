@@ -205,6 +205,13 @@ ul.feature-list
     width: auto;
     height: 50px;
 }
+#game-store img:hover
+{
+    height: 55px;
+    margin-bottom: 25px;
+    width: auto;
+    transform: scale(ease);
+}
 footer
 {
     padding: 15px;
