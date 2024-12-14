@@ -15,7 +15,7 @@ body
     font-weight: 600;
     font-style: normal;
     text-decoration: none;
-    text-shadow: 0px 0px 1px rgb(255, 254, 187);
+    text-shadow: 0px 0px 1.25px rgb(255, 254, 187);
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -26,11 +26,51 @@ body
 .navigation-bar
 {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     height: 25px;
     padding: 15px;
     color: white;
     text-decoration: none;
-    background-color: rgb(135, 199, 99);
+    background-color: rgb(48, 110, 67);
+    box-shadow: 0px 0px 15px rgb(48, 110, 67);
+}
+.studio-logo
+{
+    position: absolute;
+    left: 15px;
+}
+.studio-logo img
+{
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px white;
+}
+.studio-name
+{
+    position: absolute;
+    left: 65px;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    line-height: 25px;
+    font-size: 15px;
+    font-family: "Cormorant Garamond";
+}
+.navigation-link
+{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.navigation-link nav a, .navigation-link nav .about
+{
+    margin: 0 5px;
 }
 .estella-logo
 {
@@ -42,10 +82,14 @@ body
 }
 .estella-studio-text
 {
-    padding-left: 15px;
+    position: absolute;
+    left: 50px; /* Adjusted to provide space between logo and text */
+    display: flex;
+    align-items: center;
+    height: 25px; /* Match the height of the logo */
+    line-height: 25px; /* Match the height of the logo */
     font-size: 15px;
     font-family: "Cormorant Garamond";
-    float: left;
 }
 .about
 {
@@ -129,4 +173,11 @@ footer
     padding: 15px;
     color: rgb(255, 255, 255);
     background-color: rgb(45, 105, 85);
+}
+@media (max-width: 720px)
+{
+    .studio-name
+    {
+        display: none;
+    }
 }
