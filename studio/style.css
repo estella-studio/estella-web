@@ -1,0 +1,37 @@
+@font-face
+{
+    font-family: "Funnel Sans";
+    src: url(assets/fonts/funnel-sans/static/FunnelSans-SemiBold.ttf);
+}
+body
+{
+    font-family: "Funnel Sans", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: rgba(210, 255, 225, 0.877);
+}
+.name
+{
+    gap: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: fit-content;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(45, 105, 85);
+    box-shadow: 0px 0px 7.5px rgb(48, 110, 67);
+}
+.developers
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 25px;
+    margin-left: 25px;
+    text-align: left;
+}

@@ -1,14 +1,16 @@
+@font-face
+{
+    font-family: "Funnel Sans";
+    src: url(assets/fonts/funnel-sans/static/FunnelSans-SemiBold.ttf);
+}
 body
 {
     font-family: "Funnel Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
     text-decoration: none;
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    background-color: rgba(251, 255, 239, 0.877);
+    background-color: rgba(210, 255, 225, 0.877);
 }
