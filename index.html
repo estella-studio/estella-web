@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Estella Studio</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <!--
+        TODO:
+        [] CSS
+        [x] Navigation Bar
+        [] Game Logo
+        [] About
+        [] Description
+    -->
+    <body>
+        <div class="navigation-bar">
+            <div class="studio-logo">
+                <img src="assets/pictures/estella-logo.png" alt="Estella Logo">
+            </div>
+            <div class="studio-name">
+                <a>Estella Studio</a>
+            </div>
+            <div class="navigation-link">
+                <nav>
+                    <a href="./" title="Home" style="color: inherit; text-decoration: none;">Home</a>
+                    <div class="about">
+                        <a href="#about" title="About" style="color: inherit; text-decoration: none;">About</a>
+                        <div class="about-content">
+                            <a href="./studio" title="Studio" target="_blank">Studio</a>
+                            <a href="./developers" title="Developer" target="_blank">Developer</a>
+                        </div>
+                    </div>
+                    <a href="./dev-log" title="Dev Log" style="color: inherit; text-decoration: none;" target="_blank">Dev Log</a>
+                    <a href="#game-store" title="Links" style="color: inherit; text-decoration: none;">Links</a>
+                </nav>
+            </div>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+        </div>
+        <main>
+            <div id="mobile-menu" class="mobile-menu"> <!-- add mobile menu -->
+                <a href="./" title="Home">Home</a>
+                <a href="#about" title="About">About</a>
+                <a href="./dev-log" title="Dev Log" target="_blank">Dev Log</a>
+                <a href="#game-store" title="Links">Links</a>
+            </div>
+            <div class="name">
+                <img src="assets/pictures/main-page/logo.jpg" alt="HackerRank"/>
+                <h1>gameName</h1>
+                <h2>Estella Studio</h2>
+            </div>
+            <div class="demo-video">
+                <!-- <iframe width=auto height=50% src="https://www.youtube.com/embed/-xHqglB973c?si=R-vAgnyLFoKNgUNK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                <figcaption>A look inside gameName</figcaption>
+            </div>
+            <div class="description">
+                <h2>About gameName</h2>
+                <p>
+                    Game description
+                </p>
+                <p>
+                    gameName is a game
+                </p>
+            </div>
+            <div class="screenshots">
+                <h2>Screenshots</h2>
+                </figcaption>
+                <a
+                    title="Screenshot 0"
+                    ><img src="assets/pictures/main-page/screenshot-2.jpg"/>
+                </a>
+                <figcaption>
+                    <em>Screenshot 0</em>
+                </figcaption>
+                <a
+                    title="Screenshot 1"
+                    ><img src="assets/pictures/main-page/screenshot-0.png"/>
+                </a>
+                <figcaption>
+                    <em>Screenshot 1</em>
+                </figcaption>
+                <a
+                    title="Screenshot 2"
+                    ><img src="assets/pictures/main-page/screenshot-1.jpeg"/>
+                </a>
+                <figcaption>
+                    <em>Screenshot 2</em>
+            </div>
+            <div class="feature">
+                <h2>Features</h2>
+                <ul class="feature-list">
+                    <li>Player can walk</li>
+                    <li>Player can stop walking</li>
+                    <li>Player can touch grass</li>
+                    <li>Player can do activities</li>
+                    <li>Game can be paused</li>
+                    <li>Game can be resumed</li>
+                </ul>
+            </div>
+            <div id="game-store">
+                <h2>Get gameName</h2>
+                <a
+                  href="https://store.steampowered.com/"
+                  title="Steam"
+                  style="text-decoration: none;"
+                  target="_blank"
+                  ><img src="assets/pictures/main-page/game-store/steam.png" alt="Steam"/>
+                </a>
+                <a
+                  href="https://itch.io/"
+                  title="itch.io"
+                  style="text-decoration: none;"
+                  target="_blank"
+                  ><img src="assets/pictures/main-page/game-store/itch-io.png"alt="itch.io"/>
+                </a>
+                <a
+                  href="https://store.epicgames.com/en-US/"
+                  title="Epic Games"
+                  style="text-decoration: none;"
+                  target="_blank"
+                  ><img src="assets/pictures/main-page/game-store/epic-games.png" alt="Epic Games"/>
+                </a>
+                <a
+                  href="https://www.gog.com/en/"
+                  title="GOG"
+                  style="text-decoration: none;"
+                  target="_blank"
+                  ><img src="assets/pictures/main-page/game-store/gog.png" alt="GOG"/>
+                </a>
+                <a
+                  href="https://en.wikipedia.org/wiki/List_of_software_package_management_systems"
+                  title="Your distribution's package manager"
+                  style="text-decoration: none;"
+                  target="_blank"
+                  ><img src="assets/pictures/main-page/game-store/linux.png" alt="Your distribution's package manager"/>
+                </a>
+              </div>
+            </div>
+        </main>
+        <footer>
+            <div id="about">
+                <p>gameName Copyright © 2024 by Estella Studio</p>
+            </div>
+        </footer>
+        <script>
+            function toggleMenu()
+            {
+                var menu = document.getElementById("mobile-menu");
+                if (menu.style.display === "block")
+                {
+                    menu.style.display = "none";
+                }
+                else
+                {
+                    menu.style.display = "block";
+                }
+            }
+        </script
+    </body->
+</html>

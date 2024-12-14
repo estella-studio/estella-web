@@ -1,0 +1,16 @@
+body
+{
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(251, 255, 239, 0.877);
+}
+.developers
+{
+    padding-top: 25px;
+    margin-left: 25px;
+    text-align: left;
+}
