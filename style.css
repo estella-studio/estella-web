@@ -199,6 +199,7 @@ ul.feature-list
 }
 #game-store img
 {
+    transition: all 0.25s ease;
     padding: 5px;
     margin-top: 30px;
     margin-bottom: 30px;
