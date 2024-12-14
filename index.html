@@ -3,6 +3,7 @@
     <head>
         <title>Estella Studio</title>
         <link rel="stylesheet" href="style.css"/>
+        <script src="index.js" defer></script>
     </head>
     <!--
         TODO:
@@ -39,7 +40,7 @@
             </div>
         </div>
         <main>
-            <div id="mobile-menu" class="mobile-menu"> <!-- add mobile menu -->
+            <div id="mobile-menu" class="mobile-menu">
                 <a href="./" title="Home">Home</a>
                 <a href="#about" title="About">About</a>
                 <a href="./dev-log" title="Dev Log" target="_blank">Dev Log</a>
@@ -51,7 +52,9 @@
                 <h2>Estella Studio</h2>
             </div>
             <div class="demo-video">
-                <!-- <iframe width=auto height=50% src="https://www.youtube.com/embed/-xHqglB973c?si=R-vAgnyLFoKNgUNK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                <div class="youtube-video">
+                    <iframe width=360 height=240 src="https://www.youtube.com/embed/-xHqglB973c?si=R-vAgnyLFoKNgUNK" title="Trailer"></iframe>
+                </div>
                 <figcaption>A look inside gameName</figcaption>
             </div>
             <div class="description">
@@ -143,19 +146,5 @@
                 <p>gameName Copyright © 2024 by Estella Studio</p>
             </div>
         </footer>
-        <script>
-            function toggleMenu()
-            {
-                var menu = document.getElementById("mobile-menu");
-                if (menu.style.display === "block")
-                {
-                    menu.style.display = "none";
-                }
-                else
-                {
-                    menu.style.display = "block";
-                }
-            }
-        </script
     </body->
 </html>
