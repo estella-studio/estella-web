@@ -60,28 +60,28 @@ body
 
 .section:nth-child(2)
 {
-    background: url(assets/pictures/background/screenshot-1.jpeg);
+    background: url(assets/pictures/background/background-1.png);
     background-size: cover;
     background-position: center;
 }
 
 .section:nth-child(3)
 {
-    background: url(assets/pictures/background/screenshot-2.jpg);
+    background: url(assets/pictures/background/background-2.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .section:nth-child(4)
 {
-    background: url(assets/pictures/background/screenshot-3.png);
+    background: url(assets/pictures/background/background-3.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .section:nth-child(5)
 {
-    background: url(assets/pictures/background/screenshot-4.png);
+    background: url(assets/pictures/background/background-4.jpg);
     background-size: cover;
     background-position: center;
 }
