@@ -12,13 +12,17 @@ body
 {
     font-family: "Funnel Sans", sans-serif;
     text-decoration: none;
-    text-shadow: 0px 0px 1.25px rgb(255, 254, 187);
+    text-shadow: 0px 0px 1px rgb(255, 254, 187);
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    background-color: rgba(210, 255, 225, 0.877);
+    background-image: url(assets/pictures/main-page/background-0.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    /* background-color: rgb(108, 156, 164); */
 }
 .navigation-bar
 {
@@ -46,7 +50,7 @@ body
     height: 40px;
     width: auto;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px white;
+    box-shadow: 0px 0px 2.5px white;
 }
 .studio-name
 {
@@ -163,6 +167,7 @@ body
 }
 .name
 {
+    color: rgb(4, 94, 76);
     margin: 30px;
 }
 .name img
@@ -173,19 +178,92 @@ body
     width: 100px;
     height: auto;
 }
+.video-selector
+{
+    position: relative;
+    display: inline-block;
+}
+.video-selector a
+{
+    cursor: pointer;
+}
+.video-content
+{
+    display: none;
+    position: absolute;
+    background-color: #08405b;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+.video-content a
+{
+    /* transition: all 0.25s ease; */
+    margin: 10px;
+    color: rgb(134, 217, 201);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.video-content a:hover
+{
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    background-color: #ffffff4f;
+}
+.video-selector:hover .video-content
+{
+    display: block;
+}
+.video-section
+{
+    position: relative;
+    display: inline-block;
+    background-color: #08405b;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+#video-select
+{
+    padding: 5px;
+    font-size: 14px;
+}
+.demo-video
+{
+    color: rgb(134, 217, 201);
+}
+.youtube-video
+{
+    display: inline;
+}
 .youtube-video iframe
+{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    /* border: 0px 0px 1px rgb(161, 255, 202); */
+    /* box-shadow: 0px 0px 12.5px rgb(161, 255, 202); */
+    border-radius: 5px;
+}
+/* .youtube-video iframe
 {
     border: solid 1px rgb(161, 255, 202);
     box-shadow: 0px 0px 12.5px rgb(161, 255, 202);
     border-radius: 5px;
-}
+} */
 .description
 {
+    color: rgb(22, 219, 183);
     padding: 30px;
     font-size: 10px;
 }
 .feature
 {
+    color: white;
     margin: 30px;
     text-align: left;
 }
@@ -195,6 +273,7 @@ ul.feature-list
 }
 #game-store
 {
+    color: white;
     margin: 30px;
 }
 #game-store img
@@ -220,14 +299,14 @@ footer
     background-color: rgb(45, 105, 85);
 }
 .screenshots {
+    
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to bottom, #d7ffe4, #d7ffe4);
-    overflow: hidden;
+    /* background: linear-gradient(to bottom, #d7ffe4, #d7ffe4); */
 }
 
 .slider {

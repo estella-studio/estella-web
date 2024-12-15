@@ -59,3 +59,9 @@ rightArrow.addEventListener('click', moveRight);
 
 updateSlides();
 startAutoSlide();
+
+function changeVideo(videoUrl)
+{
+    const iframe = document.querySelector('.youtube-video iframe');
+    iframe.src = videoUrl;
+}
