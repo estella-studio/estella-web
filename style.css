@@ -194,10 +194,13 @@ body
     background-color: #08405b;
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
     z-index: 1;
 }
 .video-content a
 {
+    /* transition: all 0.25s ease; */
+    margin: 10px;
     color: rgb(134, 217, 201);
     padding: 12px 16px;
     text-decoration: none;
@@ -205,7 +208,9 @@ body
 }
 .video-content a:hover
 {
-    background-color: #575757;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    background-color: #ffffff4f;
 }
 .video-selector:hover .video-content
 {
