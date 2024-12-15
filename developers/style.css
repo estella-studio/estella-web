@@ -72,3 +72,10 @@ body
     padding-bottom: 25px;
     padding-right: 5px;
 }
+.link img:hover
+{
+    transition: all 0.25s ease;
+    height: 40px;
+    width: auto;
+    padding-bottom: 20px;
+}
