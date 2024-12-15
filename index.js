@@ -65,3 +65,23 @@ function changeVideo(videoUrl)
     const iframe = document.querySelector('.youtube-video iframe');
     iframe.src = videoUrl;
 }
+
+let currentPageIndex = 0;
+const pages = document.querySelectorAll('.page');
+
+function scrollToPage(index) {
+    if (index >= 0 && index < pages.length) {
+        pages[index].scrollIntoView({ behavior: 'smooth' });
+        currentPageIndex = index;
+    }
+}
+
+function handleScroll(event) {
+    if (event.deltaY > 0) {
+        scrollToPage(currentPageIndex + 1);
+    } else {
+        scrollToPage(currentPageIndex - 1);
+    }
+}
+
+window.addEventListener('wheel', handleScroll);

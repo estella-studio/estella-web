@@ -8,6 +8,10 @@
     font-family: "Cormorant Garamond";
     src: url(assets/fonts/cormorant-garamond/CormorantGaramond-SemiBold.ttf);
 }
+html
+{
+    scroll-behavior: smooth;
+}
 body
 {
     font-family: "Funnel Sans", sans-serif;
