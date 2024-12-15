@@ -18,10 +18,11 @@ body
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    background-image: url(assets/pictures/main-page/background-0.png);
+    background-image: url(assets/pictures/main-page/background-0.webp);
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+    background-position-y: top;
+    /* background-position: top; */
+    /* background-size: cover; */
     /* background-color: rgb(108, 156, 164); */
 }
 .navigation-bar
@@ -33,7 +34,7 @@ body
     gap: 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    height: 25px;
+    height: 70px;
     padding: 15px;
     color: white;
     text-decoration: none;
