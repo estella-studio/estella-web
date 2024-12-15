@@ -8,7 +8,6 @@
     <!--
         TODO:
         [] CSS
-        [] About
         [] Description
     -->
     <body>
@@ -19,18 +18,18 @@
             <div class="studio-name">
                 <a>Estella Studio</a>
             </div>
-            <div class="navigation-link">
+            <div class="navigation-link" id="nav-link">
                 <nav>
-                    <a href="./" title="Home" style="color: inherit; text-decoration: none;">Home</a>
+                    <a href="#nav-link" title="Home" style="color: inherit; text-decoration: none;" class="selection-navigation">Home</a>
                     <div class="about">
-                        <a href="#about" title="About" style="color: inherit; text-decoration: none;">About</a>
+                        <a href="#about" style="color: inherit; text-decoration: none;">About</a>
                         <div class="about-content">
-                            <a href="./studio" title="Studio" target="_blank">Studio</a>
-                            <a href="./developers" title="Developer" target="_blank">Developer</a>
+                            <a href="./studio" title="Studio" target="_blank" class="selection-navigation">Studio</a>
+                            <a href="./developers" title="Developers" target="_blank" class="selection-navigation">Developers</a>
                         </div>
                     </div>
-                    <a href="./dev-log" title="Dev Log" style="color: inherit; text-decoration: none;" target="_blank">Dev Log</a>
-                    <a href="#game-store" title="Links" style="color: inherit; text-decoration: none;">Links</a>
+                    <a href="./dev-log" title="Dev Log" style="color: inherit; text-decoration: none;" target="_blank" class="selection-navigation">Dev Log</a>
+                    <a href="#game-store" title="Links" style="color: inherit; text-decoration: none;" class="selection-navigation">Links</a>
                 </nav>
             </div>
             <div class="hamburger-menu" onclick="toggleMenu()">
@@ -125,6 +124,38 @@
                   style="text-decoration: none;"
                   target="_blank"
                   ><img src="assets/pictures/main-page/game-store/linux.png" alt="Your distribution's package manager"/>
+                </a>
+              </div>
+            </div>
+            <div class="social-links" id="game-store">
+                <h2>Social Links</h2>
+                <a
+                  href="https://instagram.com/estellagamedev/"
+                  title="Instagram"
+                  style="text-decoration: none;"
+                  target="_blank"
+                  ><img src="assets/pictures/main-page/social-link/instagram.png" alt="Instagram"/>
+                </a>
+                <a
+                  href="https://twitter.com/EstellaGameDev"
+                  title="Twitter"
+                  style="text-decoration: none;"
+                  target="_blank"
+                  ><img src="assets/pictures/main-page/social-link/twitter.png"alt="Twitter"/>
+                </a>
+                <a
+                  href="https://itch.io/"
+                  title="itch.io"
+                  style="text-decoration: none;"
+                  target="_blank"
+                  ><img src="assets/pictures/main-page/social-link/itch-io.png" alt="itch.io"/>
+                </a>
+                <a
+                  href="https://reddit.com/r/EstellaGameDev"
+                  title="Reddit"
+                  style="text-decoration: none;"
+                  target="_blank"
+                  ><img src="assets/pictures/main-page/social-link/reddit.png" alt="Reddit"/>
                 </a>
               </div>
             </div>
