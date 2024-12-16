@@ -65,7 +65,6 @@ body
     background: url(assets/pictures/background/background-0.jpg);
     background-size: cover;
     background-position: center;
-    /* padding: 2vh; */
     overflow: hidden;
 }
 
@@ -74,7 +73,6 @@ body
     background: url(assets/pictures/background/background-1.png);
     background-size: cover;
     background-position: center;
-    /* padding: 2vh; */
     overflow: hidden;
 }
 
@@ -83,7 +81,6 @@ body
     background: url(assets/pictures/background/background-2.jpg);
     background-size: cover;
     background-position: center;
-    /* padding: 2vh; */
     overflow: hidden;
 }
 
@@ -179,24 +176,25 @@ body
     height: 10vh;
 }
 
+.copyright-information
+{
+    position: absolute;
+    left: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
 .esrb
 {
     position: absolute;
-    bottom: 2vh;
+    bottom: 6vh;
 }
 
 .esrb img
 {
     height: 10vh;
-}
-
-.copyright-information
-{
-    position: absolute;
-    left: 2vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; 
+    width: auto;
 }
 
 .copyright-links
@@ -204,7 +202,6 @@ body
     display: flex;
     flex-direction: row;
     gap: 2vh;
-    padding-left: 2vh;
 }
 
 .copyright-links a
@@ -215,9 +212,8 @@ body
 
 .copyright-text
 {
-    position: absolute;
-    padding-left: 2vh;
-    margin: 0.2vh;
+    left: 0vh;
+    position: relative;
 }
 
 .arrow-down
@@ -240,7 +236,6 @@ body
 
 .arrow-down img:hover
 {
-    /* right: 1vh; */
     transition: all 0.25s ease;
     transform: scale(1.1);
 }
