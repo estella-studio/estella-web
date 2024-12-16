@@ -91,3 +91,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
     startAutoSlide();
 });
+
+/* Video player */
+
+document.addEventListener('DOMContentLoaded', () => {
+    const mainVideo = document.getElementById('main-video');
+    const videoThumbnails = document.querySelectorAll('.video-selector .thumbnail');
+    const videoArrowLeft = document.getElementById('video-arrow-left');
+    const videoArrowRight = document.getElementById('video-arrow-right');
+    const videoDots = document.querySelectorAll('.video-indicator .dot');
+
+    let currentVideoIndex = 0;
+    const videos = Array.from(videoThumbnails).map(thumbnail => thumbnail.getAttribute('data-video'));
+
+    function updateVideo() {
+        mainVideo.src = videos[currentVideoIndex];
+        videoDots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentVideoIndex);
+        });
+    }
+
+    videoThumbnails.forEach((thumbnail, index) => {
+        thumbnail.addEventListener('click', () => {
+            currentVideoIndex = index;
+            updateVideo();
+        });
+    });
+
+    videoArrowLeft.addEventListener('click', () => {
+        currentVideoIndex = (currentVideoIndex > 0) ? currentVideoIndex - 1 : videos.length - 1;
+        updateVideo();
+    });
+
+    videoArrowRight.addEventListener('click', () => {
+        currentVideoIndex = (currentVideoIndex < videos.length - 1) ? currentVideoIndex + 1 : 0;
+        updateVideo();
+    });
+
+    updateVideo();
+});
