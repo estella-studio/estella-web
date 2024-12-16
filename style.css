@@ -348,9 +348,9 @@ body
 .video-frame .main-video
 {
     position: absolute;
-    width: 120vh;
-    height: auto;
-    margin-left: 35vh;
+    width: auto;
+    height: 60vh;
+    margin-left: 22.5vw;
     z-index: 1;
     border-radius: 5px;
 }
