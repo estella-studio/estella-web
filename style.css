@@ -103,7 +103,7 @@ body
     border-radius: 5px;
 }
 
-.social-links
+.links
 {
     position: absolute;
     margin: 2vh;
@@ -112,12 +112,20 @@ body
     justify-content: flex-end;
 }
 
-.social-links img
+.links img
 {
+    transition: all 0.25s ease;
     height: 7.5vh;
     border-radius: 5px;
     padding-left: 1vh;
     padding-right: 1vh;
+}
+
+.links img:hover
+{
+    transition: all 0.25s ease;
+    height: 8vh;
+    padding-right: 0.5vh;
 }
 
 .artwork-main-center
