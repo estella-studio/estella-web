@@ -399,7 +399,7 @@ body
 {
     position: absolute;
     top: 200vh;
-    left: 19.25%;
+    left: 19vw;
     top: 212.5vh;
     transform: translateX(-50%);
     display: flex;
