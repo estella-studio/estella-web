@@ -99,8 +99,7 @@ body
 {
     height: auto;
     display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5vh;
     margin-left: auto;
     margin-right: auto;
     width: 125vh;
@@ -121,7 +120,7 @@ body
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin: 5px;
+    margin: 2vh;
     width: 85vh;
     height: 15vh;
 }
@@ -138,7 +137,7 @@ body
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 30px;
+    margin: 5vh;
     margin-left: auto;
     margin-right: auto;
     width: 100vh;
