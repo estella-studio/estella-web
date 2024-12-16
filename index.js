@@ -113,6 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoArrowLeft = document.getElementById('video-arrow-left');
     const videoArrowRight = document.getElementById('video-arrow-right');
     const videoDots = document.querySelectorAll('.video-indicator .dot');
+    const selectedVideo = document.querySelectorAll('.video-selector .thumbnail');
 
     let currentVideoIndex = 0;
     const videos = Array.from(videoThumbnails).map(thumbnail => thumbnail.getAttribute('data-video'));
@@ -121,6 +122,9 @@ document.addEventListener('DOMContentLoaded', () => {
         mainVideo.src = videos[currentVideoIndex];
         videoDots.forEach((dot, index) => {
             dot.classList.toggle('active', index === currentVideoIndex);
+        });
+        selectedVideo.forEach((thumbnail, index) => {
+            thumbnail.classList.toggle('active', index === currentVideoIndex);
         });
     }
 

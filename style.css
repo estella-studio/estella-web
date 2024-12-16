@@ -447,6 +447,17 @@ body
     transform: scale(1.5);
 }
 
+.video-selector .thumbnail.active
+{
+    transition: all 0.25s ease;
+}
+
+.video-selector .thumbnail.active
+{
+    transition: all 0.25s ease;
+    transform: scale(1.1);
+}
+
 .video-indicator img
 {
     border-radius: 100%;
