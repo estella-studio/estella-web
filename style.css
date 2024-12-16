@@ -10,15 +10,15 @@
     src: url(assets/fonts/cormorant-garamond/CormorantGaramond-SemiBold.ttf);
 }
 
-@keyframes fadeIn
+@keyframes arrow-animation
 {
-    from
+    0%, 100%
     {
-        opacity: 0;
+        transform: translateY(0);
     }
-    to
+    50%
     {
-        opacity: 1;
+        transform: translateY(-1vh);
     }
 }
 
@@ -56,6 +56,8 @@ body
     background: url(assets/pictures/background/background-0.jpg);
     background-size: cover;
     background-position: center;
+    padding: 2vh;
+    overflow: hidden;
 }
 
 .section:nth-child(2)
@@ -91,7 +93,7 @@ body
 .studio-logo
 {
     position: absolute;
-    margin: 2vh;
+    left: 2vh;
     justify-content: left;
     display: flex;
     justify-content: flex-start;
@@ -106,8 +108,7 @@ body
 .links
 {
     position: absolute;
-    margin: 2vh;
-    right: 0;
+    right: 2vh;
     display: flex;
     justify-content: flex-end;
 }
@@ -167,17 +168,27 @@ body
 .arrow-down
 {
     position: absolute;
-    right: 0;
+    bottom: 2vh;
+    right: 2vh;
+    transform: translateX(-50%);
     display: flex;
     justify-content: flex-end;
+    animation: arrow-animation 2.5s infinite;
 }
 
 .arrow-down img
 {
-    margin-bottom: 5vh;
-    margin-right: 5vh;
+    transition: all 0.25s ease;
     height: 10vh;
     width: 10vh;
+}
+
+.arrow-down img:hover
+{
+    /* right: 1vh; */
+    transition: all 0.25s ease;
+    height: 11vh;
+    width: 11vh;
 }
 
 /* Section 2 */
