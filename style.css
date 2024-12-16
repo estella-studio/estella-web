@@ -234,14 +234,14 @@ body
 .image-frame .frame
 {
     position: absolute;
-    width: 90vh;
-    height: 70vh;
+    width: 130vh;
+    height: 80vh;
 }
 
 .image-frame .main-image
 {
     position: absolute;
-    width: 80vh;
+    width: 100vh;
     height: auto;
     z-index: 1;
 }
@@ -257,12 +257,12 @@ body
 
 .image-frame .arrow-left
 {
-    left: 17.5vh;
+    left: 15vh;
 }
 
 .image-frame .arrow-right
 {
-    right: 17.5vh;
+    right: 15vh;
 }
 
 .image-frame .arrow-left img,
@@ -282,7 +282,7 @@ body
 .image-selector
 {
     position: absolute;
-    top: 180vh;
+    top: 185vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
