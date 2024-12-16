@@ -179,6 +179,17 @@ body
     height: 10vh;
 }
 
+.esrb
+{
+    position: absolute;
+    bottom: 2vh;
+}
+
+.esrb img
+{
+    height: 10vh;
+}
+
 .copyright-information
 {
     position: absolute;
@@ -193,7 +204,7 @@ body
     display: flex;
     flex-direction: row;
     gap: 2vh;
-    margin: 0.2vh;
+    padding-left: 2vh;
 }
 
 .copyright-links a
@@ -204,6 +215,8 @@ body
 
 .copyright-text
 {
+    position: absolute;
+    padding-left: 2vh;
     margin: 0.2vh;
 }
 
