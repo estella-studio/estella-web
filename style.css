@@ -335,7 +335,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40vh;
+    margin-top: 35vh;
 }
 
 .video-frame .frame
@@ -394,7 +394,7 @@ body
 .video-selector
 {
     position: absolute;
-    top: 275vh;
+    top: 270vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -425,7 +425,7 @@ body
 .video-indicator
 {
     position: absolute;
-    top: 300vh;
+    top: 290vh;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -443,7 +443,13 @@ body
 
 .video-indicator .dot.active
 {
-    transform: scale(1.1);
+    transition: all 0.25s ease;
+    transform: scale(1.5);
+}
+
+.video-indicator img
+{
+    border-radius: 100%;
 }
 
 /* Section 4 */
