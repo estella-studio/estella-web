@@ -245,6 +245,11 @@ body
     height: 80vh;
 }
 
+.image-frame img
+{
+    border-radius: 5px;
+}
+
 .image-frame .main-image
 {
     position: absolute;
@@ -308,7 +313,13 @@ body
 
 .image-selector .thumbnail:hover
 {
+    transition: all 0.25s ease;
     transform: scale(1.1);
+}
+
+.image-selector img
+{
+    border-radius: 5px;
 }
 
 /* Section 3 */
