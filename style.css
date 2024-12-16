@@ -18,7 +18,7 @@
     }
     50%
     {
-        transform: translateY(-1vh);
+        transform: translateY(-1.5vh);
     }
 }
 
@@ -118,15 +118,14 @@ body
     transition: all 0.25s ease;
     height: 7.5vh;
     border-radius: 5px;
-    padding-left: 1vh;
-    padding-right: 1vh;
+    padding-left: 1.2vh;
+    padding-right: 1.2vh;
 }
 
 .links img:hover
 {
     transition: all 0.25s ease;
-    height: 8vh;
-    padding-right: 0.5vh;
+    transform: scale(1.125);
 }
 
 .artwork-main-center
@@ -187,8 +186,7 @@ body
 {
     /* right: 1vh; */
     transition: all 0.25s ease;
-    height: 11vh;
-    width: 11vh;
+    transform: scale(1.1);
 }
 
 /* Section 2 */
