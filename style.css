@@ -255,7 +255,7 @@ body
 .image-frame .frame
 {
     position: absolute;
-    width: 62.5%;
+    width: 62.5vw;
     height: auto;
 }
 
@@ -267,7 +267,7 @@ body
 .image-frame .main-image
 {
     position: absolute;
-    width: 52.5%;
+    width: 50vw;
     height: auto;
     z-index: 0;
 }
@@ -283,19 +283,19 @@ body
 
 .image-frame .arrow-left
 {
-    right: 85%;
+    right: 85vw;
 }
 
 .image-frame .arrow-right
 {
-    left: 85%;
+    left: 85vw;
 }
 
 .image-frame .arrow-left img,
 .image-frame .arrow-right img
 {
-    height: 12.5vh;
-    width: 12.5vh;
+    height: 12vh; /* Asset change */
+    width: 12vh; /* Asset change */
     transition: all 0.25s ease;
 }
 
