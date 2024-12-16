@@ -24,9 +24,10 @@
 
 body
 {
+    color: white;
+    font-size: 2vh;
     font-family: "Funnel Sans", sans-serif;
     text-decoration: none;
-    text-shadow: 0px 0px 1px rgb(255, 254, 187);
     text-align: center;
     margin: 0;
     background-repeat: no-repeat;
@@ -162,6 +163,33 @@ body
     margin: 10vh;
     width: 50vh;
     height: 10vh;
+}
+
+.copyright-information
+{
+    position: absolute;
+    left: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+.copyright-links
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    margin: 0.2vh;
+}
+
+.copyright-links a
+{
+    text-decoration: none;
+}
+
+.copyright-text
+{
+    margin: 0.2vh;
 }
 
 .arrow-down
