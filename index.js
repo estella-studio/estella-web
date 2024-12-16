@@ -58,25 +58,38 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
     const images = Array.from(thumbnails).map(thumbnail => thumbnail.getAttribute('data-image'));
 
+    function isValidImagePath(path) {
+        return path && path.startsWith('assets/pictures/section-2/');
+    }
+
     thumbnails.forEach((thumbnail, index) => {
         thumbnail.addEventListener('click', () => {
-            mainImage.src = thumbnail.getAttribute('data-image');
-            currentIndex = index;
+            const imagePath = thumbnail.getAttribute('data-image');
+            if (isValidImagePath(imagePath)) {
+                mainImage.src = imagePath;
+                currentIndex = index;
+            }
         });
     });
 
     arrowLeft.addEventListener('click', () => {
-        currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+        do {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+        } while (!isValidImagePath(images[currentIndex]));
         mainImage.src = images[currentIndex];
     });
 
     arrowRight.addEventListener('click', () => {
-        currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+        do {
+            currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+        } while (!isValidImagePath(images[currentIndex]));
         mainImage.src = images[currentIndex];
     });
 
     function moveRight() {
-        currentIndex = (currentIndex + 1) % images.length;
+        do {
+            currentIndex = (currentIndex + 1) % images.length;
+        } while (!isValidImagePath(images[currentIndex]));
         mainImage.src = images[currentIndex];
     }
 
