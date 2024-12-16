@@ -88,22 +88,53 @@ body
 
 /* Section 1 */
 
+.studio-logo
+{
+    position: absolute;
+    margin: 2vh;
+    justify-content: left;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.studio-logo img
+{
+    height: 7.5vh;
+    border-radius: 5px;
+}
+
+.social-links
+{
+    position: absolute;
+    margin: 2vh;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-links img
+{
+    height: 7.5vh;
+    border-radius: 5px;
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+
 .artwork-main-center
 {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     align-items: center;
 }
 
 .artwork-main-center img
 {
-    height: auto;
+    margin-top: 20vh;
     display: block;
-    margin-top: 5vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: 125vh;
-    height: 55vh;
+    width: 100vh;
+    height: 40vh;
 }
 
 .play-button
@@ -120,28 +151,25 @@ body
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin: 2vh;
-    width: 85vh;
-    height: 15vh;
-}
-
-.title
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.title img
-{
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 5vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100vh;
+    margin: 10vh;
+    width: 50vh;
     height: 10vh;
+}
+
+.arrow-down
+{
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.arrow-down img
+{
+    margin-bottom: 5vh;
+    margin-right: 5vh;
+    height: 10vh;
+    width: 10vh;
 }
 
 /* Section 2 */
