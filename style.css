@@ -335,14 +335,14 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 35vh;
+    margin-top: 40vh;
 }
 
 .video-frame .frame
 {
     position: absolute;
-    width: 160vh;
-    height: 65vh;
+    width: auto;
+    height: 70vh;
 }
 
 .video-frame .main-video
@@ -350,7 +350,6 @@ body
     position: absolute;
     width: auto;
     height: 60vh;
-    margin-left: 22.5vw;
     z-index: 1;
     border-radius: 5px;
 }
@@ -366,13 +365,13 @@ body
 
 .video-frame .arrow-left
 {
-    margin-top: 55vh;
+    margin-top: 47.5vh;
     left: 40vw;
 }
 
 .video-frame .arrow-right
 {
-    margin-top: 55vh;
+    margin-top: 47.5vh;
     right: 40vw;
 }
 
@@ -391,21 +390,26 @@ body
     transform: scale(1.1);
 }
 
+.video-frame
+{
+    left: 3vw;
+}
+
 .video-selector
 {
     position: absolute;
-    top: 270vh;
-    left: 50%;
+    top: 200vh;
+    left: 19.25%;
+    top: 212.5vh;
     transform: translateX(-50%);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     gap: 2vh;
 }
 
 .video-selector .thumbnail
 {
-    width: 20vh;
+    width: 30vh;
     height: auto;
     cursor: pointer;
     transition: all 0.25s ease;
@@ -426,7 +430,7 @@ body
 {
     position: absolute;
     top: 290vh;
-    left: 50%;
+    left: 52.8%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
