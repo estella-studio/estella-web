@@ -10,23 +10,24 @@
     src: url(assets/fonts/cormorant-garamond/CormorantGaramond-SemiBold.ttf);
 }
 
-@keyframes fadeIn
+@keyframes arrow-animation
 {
-    from
+    0%, 100%
     {
-        opacity: 0;
+        transform: translateY(0);
     }
-    to
+    50%
     {
-        opacity: 1;
+        transform: translateY(-1.5vh);
     }
 }
 
 body
 {
+    color: white;
+    font-size: 2vh;
     font-family: "Funnel Sans", sans-serif;
     text-decoration: none;
-    text-shadow: 0px 0px 1px rgb(255, 254, 187);
     text-align: center;
     margin: 0;
     background-repeat: no-repeat;
@@ -56,6 +57,8 @@ body
     background: url(assets/pictures/background/background-0.jpg);
     background-size: cover;
     background-position: center;
+    padding: 2vh;
+    overflow: hidden;
 }
 
 .section:nth-child(2)
@@ -87,6 +90,133 @@ body
 }
 
 /* Section 1 */
+
+.studio-logo
+{
+    position: absolute;
+    left: 2vh;
+    justify-content: left;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.studio-logo img
+{
+    height: 7.5vh;
+    border-radius: 5px;
+}
+
+.social-links
+{
+    position: absolute;
+    right: 2vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-links img
+{
+    transition: all 0.25s ease;
+    height: 7.5vh;
+    border-radius: 5px;
+    padding-left: 1.2vh;
+    padding-right: 1.2vh;
+}
+
+.social-links img:hover
+{
+    transition: all 0.25s ease;
+    transform: scale(1.125);
+}
+
+.artwork-main-center
+{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.artwork-main-center img
+{
+    margin-top: 20vh;
+    display: block;
+    width: 100vh;
+    height: 40vh;
+}
+
+.play-button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button img
+{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10vh;
+    width: 50vh;
+    height: 10vh;
+}
+
+.copyright-information
+{
+    position: absolute;
+    left: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+.copyright-links
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    margin: 0.2vh;
+}
+
+.copyright-links a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+.copyright-text
+{
+    margin: 0.2vh;
+}
+
+.arrow-down
+{
+    position: absolute;
+    bottom: 2vh;
+    right: 2vh;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: flex-end;
+    animation: arrow-animation 2.5s infinite;
+}
+
+.arrow-down img
+{
+    transition: all 0.25s ease;
+    height: 10vh;
+    width: 10vh;
+}
+
+.arrow-down img:hover
+{
+    /* right: 1vh; */
+    transition: all 0.25s ease;
+    transform: scale(1.1);
+}
 
 /* Section 2 */
 
