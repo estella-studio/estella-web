@@ -66,6 +66,8 @@ body
     background: url(assets/pictures/background/background-1.png);
     background-size: cover;
     background-position: center;
+    padding: 2vh;
+    overflow: hidden;
 }
 
 .section:nth-child(3)
@@ -219,6 +221,90 @@ body
 }
 
 /* Section 2 */
+
+.image-frame
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35vh;
+}
+
+.image-frame .frame
+{
+    position: absolute;
+    width: 80vh;
+    height: auto;
+}
+
+.image-frame .main-image
+{
+    position: absolute;
+    width: 70vh;
+    height: auto;
+    z-index: 1;
+}
+
+.main-image .frame
+{
+    margin-top: 100vh;
+}
+
+.image-frame .arrow-left,
+.image-frame .arrow-right
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.image-frame .arrow-left
+{
+    left: 27.5vh;
+}
+
+.image-frame .arrow-right
+{
+    right: 27.5vh;
+}
+
+.image-frame .arrow-left img,
+.image-frame .arrow-right img
+{
+    height: 5vh;
+    width: 5vh;
+    transition: all 0.25s ease;
+}
+
+.image-frame .arrow-left img:hover,
+.image-frame .arrow-right img:hover
+{
+    transform: scale(1.1);
+}
+
+.image-selector
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+    gap: 2vh;
+}
+
+.image-selector .thumbnail
+{
+    width: 10vh;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.image-selector .thumbnail:hover
+{
+    transform: scale(1.1);
+}
 
 /* Section 3 */
 
