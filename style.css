@@ -89,6 +89,7 @@ body
     background: url(assets/pictures/background/background-3.jpg);
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .section:nth-child(5)
@@ -96,6 +97,7 @@ body
     background: url(assets/pictures/background/background-4.jpg);
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 /* Section 1 */
@@ -153,7 +155,7 @@ body
 {
     margin-top: 20vh;
     display: block;
-    width: 100vh;
+    width: 50vw;
     height: 40vh;
 }
 
@@ -166,13 +168,12 @@ body
 
 .play-button img
 {
-    max-width: 100%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin: 10vh;
-    width: 50vh;
+    width: 25vw;
     height: 10vh;
 }
 
@@ -369,6 +370,7 @@ body
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    z-index: 2;
 }
 
 .video-frame .arrow-left
