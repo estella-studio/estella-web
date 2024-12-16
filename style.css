@@ -22,6 +22,13 @@
     }
 }
 
+html, body
+{
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 body
 {
     color: white;
@@ -257,12 +264,12 @@ body
 
 .image-frame .arrow-left
 {
-    left: 15vh;
+    left: 12vw;
 }
 
 .image-frame .arrow-right
 {
-    right: 15vh;
+    right: 12vw;
 }
 
 .image-frame .arrow-left img,
