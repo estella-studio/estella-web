@@ -103,8 +103,8 @@ body
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 750px;
-    height: 300px;
+    width: 125vh;
+    height: 55vh;
 }
 
 .play-button
@@ -122,8 +122,8 @@ body
     margin-left: auto;
     margin-right: auto;
     margin: 5px;
-    width: 275px;
-    height: 50px;
+    width: 85vh;
+    height: 15vh;
 }
 
 .title
@@ -141,8 +141,8 @@ body
     margin: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
-    height: 100px;
+    width: 100vh;
+    height: 10vh;
 }
 
 /* Section 2 */
