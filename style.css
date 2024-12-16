@@ -228,27 +228,22 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 35vh;
+    margin-top: 45vh;
 }
 
 .image-frame .frame
 {
     position: absolute;
-    width: 80vh;
-    height: auto;
+    width: 90vh;
+    height: 70vh;
 }
 
 .image-frame .main-image
 {
     position: absolute;
-    width: 70vh;
+    width: 80vh;
     height: auto;
     z-index: 1;
-}
-
-.main-image .frame
-{
-    margin-top: 100vh;
 }
 
 .image-frame .arrow-left,
@@ -262,19 +257,19 @@ body
 
 .image-frame .arrow-left
 {
-    left: 27.5vh;
+    left: 17.5vh;
 }
 
 .image-frame .arrow-right
 {
-    right: 27.5vh;
+    right: 17.5vh;
 }
 
 .image-frame .arrow-left img,
 .image-frame .arrow-right img
 {
-    height: 5vh;
-    width: 5vh;
+    height: 12.5vh;
+    width: 12.5vh;
     transition: all 0.25s ease;
 }
 
@@ -286,16 +281,19 @@ body
 
 .image-selector
 {
+    position: absolute;
+    top: 180vh;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30vh;
     gap: 2vh;
 }
 
 .image-selector .thumbnail
 {
-    width: 10vh;
+    width: 20vh;
     height: auto;
     cursor: pointer;
     transition: all 0.25s ease;
