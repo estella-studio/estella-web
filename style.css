@@ -66,6 +66,8 @@ body
     background: url(assets/pictures/background/background-1.png);
     background-size: cover;
     background-position: center;
+    padding: 2vh;
+    overflow: hidden;
 }
 
 .section:nth-child(3)
@@ -219,6 +221,88 @@ body
 }
 
 /* Section 2 */
+
+.image-frame
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45vh;
+}
+
+.image-frame .frame
+{
+    position: absolute;
+    width: 130vh;
+    height: 80vh;
+}
+
+.image-frame .main-image
+{
+    position: absolute;
+    width: 100vh;
+    height: auto;
+    z-index: 1;
+}
+
+.image-frame .arrow-left,
+.image-frame .arrow-right
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.image-frame .arrow-left
+{
+    left: 15vh;
+}
+
+.image-frame .arrow-right
+{
+    right: 15vh;
+}
+
+.image-frame .arrow-left img,
+.image-frame .arrow-right img
+{
+    height: 12.5vh;
+    width: 12.5vh;
+    transition: all 0.25s ease;
+}
+
+.image-frame .arrow-left img:hover,
+.image-frame .arrow-right img:hover
+{
+    transform: scale(1.1);
+}
+
+.image-selector
+{
+    position: absolute;
+    top: 185vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+.image-selector .thumbnail
+{
+    width: 20vh;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.image-selector .thumbnail:hover
+{
+    transform: scale(1.1);
+}
 
 /* Section 3 */
 
