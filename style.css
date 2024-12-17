@@ -282,7 +282,6 @@ body
     position: absolute;
     width: 50vw;
     height: auto;
-    /* z-index: 0; */
 }
 
 .image-frame .arrow-left,
@@ -297,14 +296,11 @@ body
 .image-frame .arrow-left
 {
     left: 8vw;
-    /* padding-right: 2.5vw; */
-    /* right: 30vw; */
 }
 
 .image-frame .arrow-right
 {
     right: 8vw;
-    /* left: 30vw; */
 }
 
 .image-frame .arrow-left img,
@@ -346,15 +342,22 @@ body
     justify-content: center;
     margin-top: 20px;
     padding: 10px; */
-    position: absolute;
+    /* position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    top: 162.5vh;
-    left: 25%; /* todo: adjust center idk rn temp to 25 since we have only 4, change when needed*/
+    top: 150%;
+    left: 25%; /* todo: adjust center idk rn temp to 25 since we have only 4, change when needed
     gap: 2vw;
     margin-top: 10px;
-    padding: 10px;
+    padding: 10px; */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 16vw;
+    gap: 2vw;
+    z-index: 1;
 }
 
 .image-selector .thumbnail
