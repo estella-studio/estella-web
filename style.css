@@ -243,13 +243,22 @@ body
 
 /* Section 2 */
 
+.frame
+{
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+}
+
 .image-frame
 {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 45vh;
+    left: 50%;
 }
 
 .image-frame .frame
@@ -283,12 +292,14 @@ body
 
 .image-frame .arrow-left
 {
-    right: 85vw;
+    padding-right: 2.5vw;
+    right: 30vw;
 }
 
 .image-frame .arrow-right
 {
-    left: 85vw;
+    padding-left: 2.5vw;
+    left: 30vw;
 }
 
 .image-frame .arrow-left img,
