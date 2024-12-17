@@ -155,8 +155,8 @@ body
 {
     margin-top: 20vh;
     display: block;
-    width: 50vw;
-    height: 40vh;
+    max-width: 40%;
+    height: auto;
 }
 
 .play-button
@@ -168,19 +168,27 @@ body
 
 .play-button img
 {
+    transition: all 0.25s ease;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin: 10vh;
-    width: 25vw;
-    height: 10vh;
+    max-width: 10%;
+    height: auto;
+}
+
+.play-button img:hover
+{
+    transition: all 0.25s ease;
+    transform: scale(1.1);
 }
 
 .copyright-information
 {
     position: absolute;
-    left: 4vh;
+    left: 5vh;
+    bottom: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; 
@@ -220,7 +228,7 @@ body
 .arrow-down
 {
     position: absolute;
-    bottom: 2vh;
+    bottom: 5vh;
     right: 2vh;
     transform: translateX(-50%);
     display: flex;
