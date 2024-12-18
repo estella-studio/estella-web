@@ -10,7 +10,7 @@
     src: url(assets/fonts/cormorant-garamond/CormorantGaramond-SemiBold.ttf);
 }
 
-@keyframes arrow-animation
+@keyframes arrow-down-animation
 {
     0%, 100%
     {
@@ -62,7 +62,7 @@ body
 
 .section:nth-child(1)
 {
-    background: url(assets/pictures/background/background-0.jpg);
+    background: url(assets/pictures/background/background-0.png);
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -229,11 +229,11 @@ body
 {
     position: absolute;
     bottom: 5vh;
-    right: 2vh;
+    right: 5vh;
     transform: translateX(-50%);
     display: flex;
     justify-content: flex-end;
-    animation: arrow-animation 2.5s infinite;
+    animation: arrow-down-animation 2.5s infinite;
 }
 
 .arrow-down img
