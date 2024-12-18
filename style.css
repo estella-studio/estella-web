@@ -303,12 +303,12 @@ body
 
 .image-frame .arrow-left
 {
-    left: 8vw;
+    margin-right: 75%;
 }
 
 .image-frame .arrow-right
 {
-    right: 8vw;
+    margin-left: 75%;
 }
 
 .image-frame .arrow-left img,
