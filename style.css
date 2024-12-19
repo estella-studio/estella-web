@@ -352,7 +352,8 @@ body
 
 .image-selector img
 {
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 /* Section 3 */
@@ -363,21 +364,22 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40vh;
+    top: 40%;
 }
 
 .video-frame .frame
 {
     position: absolute;
-    width: auto;
-    height: 70vh;
+    width: 60%;
+    height: auto;
+
 }
 
 .video-frame .main-video
 {
     position: absolute;
     width: auto;
-    height: 60vh;
+    height: 30vh;
     z-index: 1;
     border-radius: 5px;
 }
