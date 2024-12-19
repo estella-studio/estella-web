@@ -251,14 +251,14 @@ body
 
 /* Section 2 */
 
-.frame
+/* .frame
 {
     padding-bottom: 5vh;
     padding-top: 5vh;
     padding-left: 2.5vw;
     padding-right: 2.5vw;
     border-radius: 5px;
-}
+} */
 
 .image-frame
 {
@@ -346,7 +346,7 @@ body
 
 .thumbnail-frame
 {
-    padding: 1vh;
+    padding: 0.5%;
     background-image: url(assets/pictures/section-2/frame.png);
     transition: all 0.25s ease;
 }
@@ -370,9 +370,13 @@ body
 {
     position: relative;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     align-items: center;
-    top: 40%;
+    margin-top: 40vh;
+    left: 60%;
+    transform: translateX(-50%);
 }
 
 .video-frame .frame
@@ -380,14 +384,13 @@ body
     position: absolute;
     width: 60%;
     height: auto;
-
 }
 
-.video-frame .main-video
+.main-video
 {
     position: absolute;
-    width: auto;
-    height: 30vh;
+    width: 50%;
+    height: auto;
     z-index: 1;
     border-radius: 5px;
 }
@@ -396,22 +399,22 @@ body
 .video-frame .arrow-right
 {
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
     transform: translateY(-50%);
     cursor: pointer;
-    z-index: 2;
 }
 
 .video-frame .arrow-left
 {
-    margin-top: 47.5vh;
-    left: 40vw;
+    margin-right: 10%;
+    margin-top: 65%;
+    /* left: 40vw; */
 }
 
 .video-frame .arrow-right
 {
-    margin-top: 47.5vh;
-    right: 40vw;
+    margin-left: 10%;
+    margin-top: 65%;
 }
 
 .video-frame .arrow-left img,
@@ -429,26 +432,23 @@ body
     transform: scale(1.1);
 }
 
-.video-frame
-{
-    left: 3vw;
-}
-
 .video-selector
 {
-    position: absolute;
-    top: 200vh;
-    left: 19vw;
-    top: 212.5vh;
-    transform: translateX(-50%);
+    position: relative;
+    right: 30%;
+    /* top: 20%; */
+    /* top: 21vh; */
+    /* transform: translateY(20vh); */
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2vh;
 }
 
 .video-selector .thumbnail
 {
-    width: 30vh;
+    width: 20%;
     height: auto;
     cursor: pointer;
     transition: all 0.25s ease;
