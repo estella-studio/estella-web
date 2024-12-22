@@ -22,7 +22,16 @@
     }
 }
 
-html, body
+body
+{
+    background-image: url("assets/pictures/coming-soon.png");
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-size: cover;
+    height: 100%;
+}
+
+/* html, body
 {
     max-width: 100%;
     overflow-x: hidden;
@@ -39,7 +48,7 @@ body
     margin: 0;
     background-repeat: no-repeat;
     background-position-y: top;
-}
+} */
 
 .container
 {
