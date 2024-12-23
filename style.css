@@ -202,8 +202,7 @@ body
 
 .esrb img
 {
-    height: 10vh;
-    width: auto;
+    height: 7.5vw;
 }
 
 .copyright-links
@@ -215,13 +214,12 @@ body
 
 .copyright-links a
 {
-    color: inherit;
+    color: white;
     text-decoration: none;
 }
 
 .copyright-text
 {
-    left: 0vh;
     position: relative;
 }
 
