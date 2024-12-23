@@ -238,15 +238,16 @@ body
 
 .arrow-down img
 {
+    transform: rotate(-90deg); /* Temp change */
     transition: all 0.25s ease;
-    height: 10vh;
-    width: 10vh;
+    height: 7.5vw;
 }
 
 .arrow-down img:hover
 {
     transition: all 0.25s ease;
-    transform: scale(1.1);
+    transform: rotate(-90deg) /* Temp change */
+    /* transform: */ scale(1.1);
 }
 
 /* Section 2 */
