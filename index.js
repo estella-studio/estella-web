@@ -52,8 +52,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const mainImage = document.getElementById('main-image');
     const thumbnails = document.querySelectorAll('.thumbnail');
-    const arrowLeft = document.getElementById('arrow-left');
-    const arrowRight = document.getElementById('arrow-right');
+    const arrowLeft = document.getElementById('screenshot-arrow-left');
+    const arrowRight = document.getElementById('screenshot-arrow-right');
 
     let currentIndex = 0;
     const images = Array.from(thumbnails).map(thumbnail => thumbnail.getAttribute('data-image'));
@@ -147,3 +147,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateVideo();
 });
+
+/* Screenshot arrow */
+
+const screenshotArrowLeft = document.getElementById('screenshot-arrow-left');
+screenshotArrowLeft.onmouseover = function()
+{
+    this.src = 'assets/pictures/section-2/arrow-left-hover.png';
+};
+screenshotArrowLeft.onmouseout = function()
+{
+    this.src = 'assets/pictures/section-2/arrow-left.png';
+}
+
+const screenshotArrowRight = document.getElementById('screenshot-arrow-right');
+screenshotArrowRight.onmouseover = function()
+{
+    this.src = 'assets/pictures/section-2/arrow-right-hover.png';
+};
+screenshotArrowRight.onmouseout = function()
+{
+    this.src = 'assets/pictures/section-2/arrow-right.png';
+}
+
+//  onmouseover="this.src='assets/pictures/section-2/arrow-left-hover.png';" onmouseout="this.src='assets/pictures/section-2/arrow-left.png';" 
