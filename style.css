@@ -314,15 +314,15 @@ body
 .image-frame .screenshot-arrow-left img,
 .image-frame .screenshot-arrow-right img
 {
-    height: 12vh; /* Asset change */
-    width: 12vh; /* Asset change */
+    height: 15vh;
+    width: auto;
     transition: all 0.25s ease;
 }
 
 .image-frame .screenshot-arrow-left img:hover,
 .image-frame .screenshot-arrow-right img:hover
 {
-    transform: scale(1.1);
+    transform: scale(1.125);
 }
 
 .image-selector
