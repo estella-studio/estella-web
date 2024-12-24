@@ -31,12 +31,12 @@ html, body
 
 body
 {
-    color: white;
+    margin: 0;
+    font-family: "Funnel Sans", sans-serif;    
     font-size: 2vh;
-    font-family: "Funnel Sans", sans-serif;
+    color: white;
     text-decoration: none;
     text-align: center;
-    margin: 0;
     background-repeat: no-repeat;
     background-position-y: top;
 }
@@ -167,43 +167,27 @@ body
     transform: scale(1.1);
 }
 
-.copyright-information
+.game-information
 {
     position: absolute;
-    left: 5vh;
-    bottom: 5vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
+    align-items: flex-start;
+    bottom: 2vh;
+    left: 2vh;
+    gap: 1vh;
 }
 
-.esrb
+.legal-links a
 {
-    position: absolute;
-    bottom: 6vh;
+    color: inherit;
+    text-decoration: inherit;
+    margin-inline-end: 5px;
 }
 
-.esrb img
+.game-information img
 {
-    height: 7.5vw;
-}
-
-.copyright-links
-{
-    display: flex;
-    flex-direction: row;
-    gap: 2vh;
-}
-
-.copyright-links a
-{
-    color: white;
-    text-decoration: none;
-}
-
-.copyright-text
-{
-    position: relative;
+    height: 10vh;
 }
 
 .arrow-down
