@@ -274,18 +274,23 @@ body
 .image-selector img
 {
     width: 10vw;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 .screenshot-thumbnail-frame
 {
     position: absolute;
+    transform: translateX(-1vw) translateY(-0.25vh); /* Temp to adjust with screenshot thumbnail */
 }
 
 .screenshot-thumbnail-frame img
 {
-    width: 11vw;
+    width: 12vw;
+}
+
+.screenshot-thumbnail-image img
+{
+    border-top-left-radius: 2vw;
+    border-bottom-right-radius: 2vw;
 }
 
 /* .frame
@@ -556,6 +561,8 @@ body
 
 @media (max-device-width: 768px)
 {
+    /* Section 1 */
+
     .section-1-center-element
     {
         margin-top: 50%;
