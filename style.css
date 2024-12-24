@@ -350,6 +350,7 @@ body
 {
     padding: 0.5%;
     background-image: url(assets/pictures/section-2/thumbnail-frame.png);
+    /* TODO: Fix background */
     transition: all 0.25s ease;
 }
 
