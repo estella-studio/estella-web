@@ -152,13 +152,15 @@ body
 
 .main-artwork img
 {
-    height: 40vh;
+    width: 45vw;
+    min-width: 350px;
 }
 
 .play-button img
 {
     transition: all 0.25s ease;
-    height: 20vh;
+    width: 20vw;
+    min-width: 125px;
 }
 
 .play-button img:hover
@@ -176,6 +178,7 @@ body
     bottom: 2vh;
     left: 2vh;
     gap: 1vh;
+    font-size: 1.5vw;
 }
 
 .legal-links a
@@ -188,7 +191,7 @@ body
 .game-information img
 {
     height: 10vw;
-    max-height: 75px;
+    max-height: 300px;
 }
 
 .arrow-down
@@ -204,8 +207,8 @@ body
 {
     transition: all 0.25s ease;
     transform: rotate(-90deg); /* Temp change */
-    height: 3.75vw;
-    min-height: 50px;
+    width: 3.75vw;
+    min-width: 100px;
 }
 
 .arrow-down img:hover
@@ -548,3 +551,23 @@ body
 /* Section 4 */
 
 /* Section 5 */
+
+/* Custom screen */
+
+@media (max-device-width: 768px)
+{
+    .section-1-center-element
+    {
+        margin-top: 50%;
+    }
+
+    .main-artwork img
+    {
+        width: 80vw;
+    }
+
+    .play-button img
+    {
+        width: 50vw;
+    }
+}
