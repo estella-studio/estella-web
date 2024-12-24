@@ -187,7 +187,7 @@ body
 
 .game-information img
 {
-    height: 10vh;
+    height: 10vw;
 }
 
 .arrow-down
@@ -196,16 +196,15 @@ body
     bottom: 5vh;
     right: 5vh;
     transform: translateX(-50%);
-    display: flex;
-    justify-content: flex-end;
     animation: arrow-down-animation 2.5s infinite;
 }
 
 .arrow-down img
 {
-    transform: rotate(-90deg); /* Temp change */
     transition: all 0.25s ease;
+    transform: rotate(-90deg); /* Temp change */
     height: 3.75vw;
+    min-height: 50px;
 }
 
 .arrow-down img:hover
