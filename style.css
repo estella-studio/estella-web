@@ -288,8 +288,10 @@ body
 .image-frame .main-image
 {
     position: absolute;
-    width: 50vw;
+    width: 55.5vw;
     height: auto;
+    transform: translateX(0.5%) translateY(-5%);
+    z-index: -1;
 }
 
 .image-frame .screenshot-arrow-left,
@@ -347,7 +349,7 @@ body
 .thumbnail-frame
 {
     padding: 0.5%;
-    background-image: url(assets/pictures/section-2/frame.png);
+    background-image: url(assets/pictures/section-2/thumbnail-frame.png);
     transition: all 0.25s ease;
 }
 
