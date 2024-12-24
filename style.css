@@ -217,6 +217,38 @@ body
 
 /* Section 2 */
 
+.screenshot
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 5vh;
+}
+
+.screenshot-frame
+{
+    z-index: 1;
+}
+
+.screenshot-image
+{
+    position: absolute;
+    top: 20px;
+}
+
+.screenshot-frame img
+{
+    width: 40vw;;
+    min-width: 400px;
+}
+
+.screenshot-image img
+{
+    width: 37vw;
+    min-width: 370px;
+}
+
 /* .frame
 {
     padding-bottom: 5vh;
