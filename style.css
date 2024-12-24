@@ -239,7 +239,7 @@ body
 {
     transform: rotate(-90deg); /* Temp change */
     transition: all 0.25s ease;
-    height: 7.5vw;
+    height: 3.75vw;
 }
 
 .arrow-down img:hover
