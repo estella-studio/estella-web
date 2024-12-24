@@ -178,7 +178,7 @@ body
     bottom: 2vh;
     left: 2vh;
     gap: 1vh;
-    font-size: 1.5vw;
+    font-size: 2vh;
 }
 
 .legal-links a
@@ -569,5 +569,10 @@ body
     .play-button img
     {
         width: 50vw;
+    }
+
+    .game-information
+    {
+        font-size: 27.5px;
     }
 }
