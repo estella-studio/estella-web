@@ -264,11 +264,40 @@ body
     gap: 42vw;
 }
 
+.screenshot-arrow img
+{
+    width: 10vw;
+}
+
+.screenshot-arrow-left img,
+.screenshot-arrow-right img
+{
+    transition: all 0.25s ease;
+}
+
+.screenshot-arrow-left img:hover,
+.screenshot-arrow-right img:hover
+{
+    transition: all 0.25s ease;
+    transform: scale(1.1);
+}
+
 .image-selector
 {
     display: flex;
     flex-direction: row;
     gap: 2vw;
+}
+
+.screenshot-thumbnail
+{
+    transition: all 0.25s ease;
+}
+
+.screenshot-thumbnail:hover
+{
+    transition: all 0.25s ease;
+    transform: scale(1.1);
 }
 
 .image-selector img
@@ -292,122 +321,6 @@ body
     border-top-left-radius: 2vw;
     border-bottom-right-radius: 2vw;
 }
-
-/* .frame
-{
-    padding-bottom: 5vh;
-    padding-top: 5vh;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
-    border-radius: 5px;
-} */
-
-/* .image-frame
-{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 45vh;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.image-frame .frame
-{
-    position: absolute;
-    width: 62.5vw;
-    height: auto;
-}
-
-.image-frame img
-{
-    border-radius: 5px;
-}
-
-.image-frame .main-image
-{
-    position: absolute;
-    width: 55.5vw;
-    height: auto;
-    transform: translateX(0.5%) translateY(-5%);
-    z-index: -1;
-}
-
-.image-frame .screenshot-arrow-left,
-.image-frame .screenshot-arrow-right
-{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
-
-.image-frame .screenshot-arrow-left
-{
-    margin-right: 75%;
-}
-
-.image-frame .screenshot-arrow-right
-{
-    margin-left: 75%;
-}
-
-.image-frame .screenshot-arrow-left img,
-.image-frame .screenshot-arrow-right img
-{
-    height: 6vw;
-    width: auto;
-    transition: all 0.25s ease;
-}
-
-.image-frame .screenshot-arrow-left img:hover,
-.image-frame .screenshot-arrow-right img:hover
-{
-    transform: scale(1.125);
-}
-
-.image-selector
-{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 16vw;
-    gap: 2vw;
-    z-index: 1;
-}
-
-.image-selector .thumbnail
-{
-    width: 10vw;
-    height: auto;
-    cursor: pointer;
-    transition: all 0.25s ease;
-}
-
-.thumbnail-frame
-{
-    padding: 0.5%;
-    background-image: url(assets/pictures/section-2/thumbnail-frame.png);
-    /* TODO: Fix background
-    transition: all 0.25s ease;
-}
-
-.image-selector img,
-.thumbnail-frame
-{
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.thumbnail-frame:hover
-{
-    transition: all 0.25s ease;
-    transform: scale(1.1);
-} */
 
 /* Section 3 */
 
