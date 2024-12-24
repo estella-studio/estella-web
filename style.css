@@ -314,7 +314,7 @@ body
 .image-frame .screenshot-arrow-left img,
 .image-frame .screenshot-arrow-right img
 {
-    height: 12vw;
+    height: 6vw;
     width: auto;
     transition: all 0.25s ease;
 }
