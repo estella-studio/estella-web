@@ -240,13 +240,13 @@ body
 .screenshot-frame img
 {
     width: 40vw;;
-    min-width: 400px;
+    /* min-width: 400px; */
 }
 
 .screenshot-image img
 {
     width: 37vw;
-    min-width: 370px;
+    /* min-width: 370px; */
 }
 
 .screenshot-arrow
@@ -257,7 +257,32 @@ body
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    gap: max(42vw, 400px);
+    /* gap: max(42vw, 400px); */
+    gap: 42vw;
+}
+
+.image-selector
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.image-selector img
+{
+    width: 10vw;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.screenshot-thumbnail-frame
+{
+    position: absolute;
+}
+
+.screenshot-thumbnail-frame img
+{
+    width: 11vw;
 }
 
 /* .frame
