@@ -249,6 +249,17 @@ body
     min-width: 370px;
 }
 
+.screenshot-arrow
+{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: max(42vw, 400px);
+}
+
 /* .frame
 {
     padding-bottom: 5vh;
