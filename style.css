@@ -64,7 +64,6 @@ body
     background: url(assets/pictures/background/background-0.png);
     background-size: cover;
     background-position: center;
-    overflow: hidden;
 }
 
 .section:nth-child(2)
@@ -138,41 +137,28 @@ body
     transform: scale(1.1);
 }
 
-.artwork-main-center
+.section-1-center-element
 {
+    margin-top: 11vh;
     position: relative;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-}
-
-.artwork-main-center img
-{
-    /* margin-top: 20vh; */
-    display: block;
-    max-width: 40vw;
-    height: auto;
+    flex-direction: column;
 }
 
 .play-button
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 5vh;
+}
+
+.main-artwork img
+{
+    height: 40vh;
 }
 
 .play-button img
 {
     transition: all 0.25s ease;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 10vh;
-    max-width: 10vw;
-    height: auto;
+    height: 20vh;
 }
 
 .play-button img:hover
