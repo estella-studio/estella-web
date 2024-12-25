@@ -320,7 +320,7 @@ body
 .screenshot-thumbnail-image img
 {
     border-top-left-radius: 2vw;
-    border-bottom-right-radius: 2vw;
+    border-bottom-right-radius: 1vw;
 }
 
 /* Section 3 */
