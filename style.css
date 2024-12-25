@@ -242,7 +242,7 @@ body
 
 .screenshot-frame img
 {
-    width: 40vw;;
+    width: 40vw;
     min-width: 400px;
 }
 
@@ -496,5 +496,32 @@ body
     .game-information
     {
         font-size: 27.5px;
+    }
+
+    /* Section 2 */
+
+    .screenshot
+    {
+        margin-top: 50%;
+    }
+
+    .screenshot-frame img
+    {
+        width: 80vw;
+    }
+
+    .screenshot-image img
+    {
+        width: 77vw;
+    }
+
+    .screenshot-arrow
+    {
+        gap: 82vw
+    }
+
+    .screenshot-arrow img
+    {
+        width: 8vw;
     }
 }
