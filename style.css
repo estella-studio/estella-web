@@ -326,6 +326,30 @@ body
 
 /* Section 3 */
 
+.video
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.video-arrow
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-frame img
+{
+    width: 50vw;
+}
+
+.video-dot img
+{
+    width: 5vw;
+}
+
 /* .video-frame
 {
     position: relative;
