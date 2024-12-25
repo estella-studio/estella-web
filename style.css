@@ -266,7 +266,8 @@ body
 
 .screenshot-arrow img
 {
-    width: 10vw;
+    width: 5vw;
+    min-width: 50px;
 }
 
 .screenshot-arrow-left img,
