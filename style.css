@@ -328,8 +328,22 @@ body
 
 .video
 {
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-main-section
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-video
+{
+    width: 47vw;
 }
 
 .video-arrow
@@ -338,6 +352,12 @@ body
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.video-frame
+{
+    /* position: absolute; */
+    transform: translateX(-1vw) translateY(-0.25vh);
 }
 
 .video-frame img
