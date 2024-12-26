@@ -328,18 +328,18 @@ body
 
 .video
 {
-    margin-top: 5vh;
+    margin-top: 7.5vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 7.5vw;
 }
 
 .video-main-section
 {
     display: flex;
-    flex-direction: row;
-    gap: 5vw;
+    flex-direction: column;
 }
 
 .video-player
@@ -350,7 +350,7 @@ body
 
 .main-video
 {
-    width: 44.5vw;
+    width: 34.5vw;
 }
 
 .video-frame
@@ -360,21 +360,27 @@ body
 
 .video-frame img
 {
-    width: 50vw;
+    width: 40vw;
 }
 
 .video-selector
 {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: flex-start;
     gap: 2.5vh;
 }
 
 .video-selector img
 {
-    height: 10vh;
+    transition: all 0.25s ease;
+    width: 12vw;
+}
+
+.video-selector img:hover
+{
+    transition: all 0.25s ease;
+    transform: scale(1.1);
 }
 
 .video-arrow
@@ -402,7 +408,7 @@ body
 
 .video-dot img
 {
-    width: 5vw;
+    width: 2.5vw;
 }
 
 /* .video-frame
