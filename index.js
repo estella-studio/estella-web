@@ -87,60 +87,100 @@
 //     });
 // });
 
+// document.addEventListener('DOMContentLoaded', () => {
+//     const mainImage = document.getElementById('main-screenshot');
+//     const thumbnails = document.querySelectorAll('.thumbnail');
+//     const arrowLeft = document.getElementById('screenshot-arrow-left');
+//     const arrowRight = document.getElementById('screenshot-arrow-right');
+
+//     let currentIndex = 0;
+//     const images = Array.from(thumbnails).map(thumbnail => thumbnail.getAttribute('src'));
+
+//     function isValidImagePath(path) {
+//         return path && path.startsWith('assets/pictures/section-2/');
+//     }
+
+//     thumbnails.forEach((thumbnail, index) => {
+//         thumbnail.addEventListener('click', () => {
+//             const imagePath = thumbnail.getAttribute('src');
+//             if (isValidImagePath(imagePath)) {
+//                 mainImage.src = imagePath;
+//                 currentIndex = index;
+//             }
+//         });
+//     });
+
+//     arrowLeft.addEventListener('click', () => {
+//         do {
+//             currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+//         } while (!isValidImagePath(images[currentIndex]));
+//         mainImage.src = images[currentIndex];
+//     });
+
+//     arrowRight.addEventListener('click', () => {
+//         do {
+//             currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+//         } while (!isValidImagePath(images[currentIndex]));
+//         mainImage.src = images[currentIndex];
+//     });
+
+//     function moveRight() {
+//         do {
+//             currentIndex = (currentIndex + 1) % images.length;
+//         } while (!isValidImagePath(images[currentIndex]));
+//         mainImage.src = images[currentIndex];
+//     }
+
+//     function startAutoSlide() {
+//         autoSlide = setInterval(moveRight, 5000);
+//     }
+
+//     function resetAutoSlide() {
+//         clearInterval(autoSlide);
+//         startAutoSlide();
+//     }
+
+//     startAutoSlide();
+// });
+
 document.addEventListener('DOMContentLoaded', () => {
-    const mainImage = document.getElementById('main-screenshot');
-    const thumbnails = document.querySelectorAll('.thumbnail');
-    const arrowLeft = document.getElementById('screenshot-arrow-left');
-    const arrowRight = document.getElementById('screenshot-arrow-right');
+    const mainScreenshot = document.getElementById('main-screenshot');
+    const screenshotThumbnails = document.querySelectorAll('.image-selector .thumbnail');
+    const screenshotArrowLeft = document.getElementById('screenshot-arrow-left');
+    const screenshotArrowRight = document.getElementById('screenshot-arrow-right');
 
-    let currentIndex = 0;
-    const images = Array.from(thumbnails).map(thumbnail => thumbnail.getAttribute('src'));
+    let currentScreenshotIndex = 0;
+    const screenshots = [
+        'assets/pictures/section-2/screenshot-0.png',
+        'assets/pictures/section-2/screenshot-1.png',
+        'assets/pictures/section-2/screenshot-2.png'
+    ];
 
-    function isValidImagePath(path) {
-        return path && path.startsWith('assets/pictures/section-2/');
+    function updateScreenshot() {
+        mainScreenshot.src = screenshots[currentScreenshotIndex];
+        screenshotThumbnails.forEach((thumbnail, index) => {
+            thumbnail.classList.toggle('active', index === currentScreenshotIndex);
+        });
     }
 
-    thumbnails.forEach((thumbnail, index) => {
+    screenshotThumbnails.forEach((thumbnail, index) => {
         thumbnail.addEventListener('click', () => {
-            const imagePath = thumbnail.getAttribute('src');
-            if (isValidImagePath(imagePath)) {
-                mainImage.src = imagePath;
-                currentIndex = index;
-            }
+            currentScreenshotIndex = index;
+            updateScreenshot();
         });
     });
 
-    arrowLeft.addEventListener('click', () => {
-        do {
-            currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
-        } while (!isValidImagePath(images[currentIndex]));
-        mainImage.src = images[currentIndex];
+    screenshotArrowLeft.addEventListener('click', () => {
+        currentScreenshotIndex = (currentScreenshotIndex > 0) ? currentScreenshotIndex - 1 : screenshots.length - 1;
+        updateScreenshot();
     });
 
-    arrowRight.addEventListener('click', () => {
-        do {
-            currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
-        } while (!isValidImagePath(images[currentIndex]));
-        mainImage.src = images[currentIndex];
+    screenshotArrowRight.addEventListener('click', () => {
+        currentScreenshotIndex = (currentScreenshotIndex < screenshots.length - 1) ? currentScreenshotIndex + 1 : 0;
+        updateScreenshot();
     });
 
-    function moveRight() {
-        do {
-            currentIndex = (currentIndex + 1) % images.length;
-        } while (!isValidImagePath(images[currentIndex]));
-        mainImage.src = images[currentIndex];
-    }
-
-    function startAutoSlide() {
-        autoSlide = setInterval(moveRight, 5000);
-    }
-
-    function resetAutoSlide() {
-        clearInterval(autoSlide);
-        startAutoSlide();
-    }
-
-    startAutoSlide();
+    updateScreenshot();
 });
 
 /* Video player */
