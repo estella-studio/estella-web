@@ -345,17 +345,17 @@ body
 .video-player
 {
     position: absolute;
+    z-index: 1;
 }
 
 .main-video
 {
-    width: 45vw;
+    width: 44.5vw;
 }
 
 .video-frame
 {
-    /* position: absolute; */
-    transform: translateX(-2.75vw) translateY(-3.5vh); /*Temp adjust frame position */
+    transform: translateX(-2.94vw) translateY(-3.5vh); /*Temp adjust frame position */
 }
 
 .video-frame img
