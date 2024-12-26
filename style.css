@@ -365,12 +365,25 @@ body
 
 .video-arrow
 {
-    /* position: absolute; */
-    /* margin-top: 300px; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.video-arrow-left img,
+.video-arrow-right img
+{
+    transition: all 0.25s ease;
+    width: 5vw;
+    min-width: 50px;
+}
+
+.video-arrow-left img:hover,
+.video-arrow-right img:hover
+{
+    transition: all 0.25s ease;
+    transform: scale(1.1);
 }
 
 .video-dot img
