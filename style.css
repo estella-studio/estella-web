@@ -339,30 +339,44 @@ body
 {
     display: flex;
     flex-direction: row;
+
+}
+
+.video-player
+{
+    position: absolute;
 }
 
 .main-video
 {
-    width: 47vw;
-}
-
-.video-arrow
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    width: 45vw;
 }
 
 .video-frame
 {
     /* position: absolute; */
-    transform: translateX(-1vw) translateY(-0.25vh);
+    transform: translateX(-2.75vw) translateY(-3.5vh); /*Temp adjust frame position */
 }
 
 .video-frame img
 {
     width: 50vw;
+}
+
+.space
+{
+    /* height: 50px; */
+    margin: auto;
+}
+
+.video-arrow
+{
+    /* position: absolute; */
+    /* margin-top: 300px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .video-dot img
