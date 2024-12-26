@@ -350,12 +350,12 @@ body
 
 .main-video
 {
-    width: 34.5vw;
+    width: 35.6vw;
 }
 
 .video-frame
 {
-    transform: translateX(-2.94vw) translateY(-3.5vh); /*Temp adjust frame position */
+    transform: translateX(-2.35vw) translateY(-3.4vw); /*Temp adjust frame position */
 }
 
 .video-frame img
