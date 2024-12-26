@@ -355,7 +355,7 @@ body
 
 .video-frame
 {
-    transform: translateX(-2.35vw) translateY(-3.4vw); /*Temp adjust frame position */
+    transform: translateX(-2.33vw) translateY(-3.4vw); /*Temp adjust frame position */
 }
 
 .video-frame img
@@ -500,7 +500,7 @@ body
 
     .video-frame
     {
-        transform: translateX(-4.68vw) translateY(-6.7vw); /*Temp adjust frame position */
+        transform: translateX(-4.65vw) translateY(-6.6vw); /*Temp adjust frame position */
     }
 
     .video-selector
@@ -515,7 +515,7 @@ body
 
     .video-frame img
     {
-        width: 78.5vw;
+        width: 78.7vw;
     }
 
     .video-arrow-left img,
