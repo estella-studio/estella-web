@@ -328,7 +328,7 @@ body
 
 .video
 {
-    margin-top: 7.5vh;
+    margin-top: max(7.5vh, 7.5vw);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -380,6 +380,12 @@ body
 .video-selector img:hover
 {
     transition: all 0.25s ease;
+    transform: scale(1.05);
+}
+
+.video-selector img.active
+{
+    transition: all 0.25s ease;;
     transform: scale(1.1);
 }
 
@@ -389,6 +395,7 @@ body
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 1vw;
 }
 
 .video-arrow-left img,
@@ -408,7 +415,14 @@ body
 
 .video-dot img
 {
+    transition: all 0.25s ease;
     width: 2.5vw;
+}
+
+.video-dot img.active
+{
+    transition: all 0.25s ease;
+    transform: scale(1.25);
 }
 
 /* Section 4 */

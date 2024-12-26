@@ -145,43 +145,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* Video player */
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const mainVideo = document.getElementById('main-video');
-//     const videoThumbnails = document.querySelectorAll('.video-selector .thumbnail');
-//     const videoArrowLeft = document.getElementById('video-arrow-left');
-//     const videoArrowRight = document.getElementById('video-arrow-right');
-//     const videoDots = document.querySelectorAll('.video-indicator .dot');
-//     const selectedVideo = document.querySelectorAll('.video-selector .thumbnail');
+document.addEventListener('DOMContentLoaded', () => {
+    const mainVideo = document.getElementById('main-video');
+    const videoThumbnails = document.querySelectorAll('.video-selector img');
+    const videoArrowLeft = document.getElementById('video-arrow-left');
+    const videoArrowRight = document.getElementById('video-arrow-right');
+    const videoDots = document.querySelectorAll('.video-dot img');
 
-//     let currentVideoIndex = 0;
-//     const videos = Array.from(videoThumbnails).map(thumbnail => thumbnail.getAttribute('data-video'));
+    let currentVideoIndex = 0;
+    const videos = [
+        'assets/videos/section-3/video-0.mp4',
+        'assets/videos/section-3/video-1.mp4',
+        'assets/videos/section-3/video-2.mp4'
+    ];
 
-//     function updateVideo() {
-//         mainVideo.src = videos[currentVideoIndex];
-//         videoDots.forEach((dot, index) => {
-//             dot.classList.toggle('active', index === currentVideoIndex);
-//         });
-//         selectedVideo.forEach((thumbnail, index) => {
-//             thumbnail.classList.toggle('active', index === currentVideoIndex);
-//         });
-//     }
+    function updateVideo() {
+        mainVideo.src = videos[currentVideoIndex];
+        videoDots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentVideoIndex);
+        });
+        videoThumbnails.forEach((thumbnail, index) => {
+            thumbnail.classList.toggle('active', index === currentVideoIndex);
+        });
+    }
 
-//     videoThumbnails.forEach((thumbnail, index) => {
-//         thumbnail.addEventListener('click', () => {
-//             currentVideoIndex = index;
-//             updateVideo();
-//         });
-//     });
+    videoThumbnails.forEach((thumbnail, index) => {
+        thumbnail.addEventListener('click', () => {
+            currentVideoIndex = index;
+            updateVideo();
+        });
+    });
 
-//     videoArrowLeft.addEventListener('click', () => {
-//         currentVideoIndex = (currentVideoIndex > 0) ? currentVideoIndex - 1 : videos.length - 1;
-//         updateVideo();
-//     });
+    videoArrowLeft.addEventListener('click', () => {
+        currentVideoIndex = (currentVideoIndex > 0) ? currentVideoIndex - 1 : videos.length - 1;
+        updateVideo();
+    });
 
-//     videoArrowRight.addEventListener('click', () => {
-//         currentVideoIndex = (currentVideoIndex < videos.length - 1) ? currentVideoIndex + 1 : 0;
-//         updateVideo();
-//     });
+    videoArrowRight.addEventListener('click', () => {
+        currentVideoIndex = (currentVideoIndex < videos.length - 1) ? currentVideoIndex + 1 : 0;
+        updateVideo();
+    });
 
-//     updateVideo();
-// });
+    updateVideo();
+});
