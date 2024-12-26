@@ -482,4 +482,53 @@ body
     {
         width: 8vw;
     }
+
+    /* Section 3 */
+
+    .video
+    {
+        margin-top: 50%;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 17.5vh;
+    }
+
+    .main-video
+    {
+        width: 70vw;
+    }
+
+    .video-frame
+    {
+        transform: translateX(-4.68vw) translateY(-6.7vw); /*Temp adjust frame position */
+    }
+
+    .video-selector
+    {
+        flex-direction: row;
+    }
+
+    .video-selector img
+    {
+        width: 20vw;
+    }
+
+    .video-frame img
+    {
+        width: 78.5vw;
+    }
+
+    .video-arrow-left img,
+    .video-arrow-right img
+    {
+        transition: all 0.25s ease;
+        width: 17.5vw;
+        min-width: 50px;
+    }
+
+    .video-dot img
+    {
+        transition: all 0.25s ease;
+        width: 8.75vw;
+    }
 }
