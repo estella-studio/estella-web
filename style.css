@@ -339,7 +339,7 @@ body
 {
     display: flex;
     flex-direction: row;
-
+    gap: 5vw;
 }
 
 .video-player
@@ -361,6 +361,20 @@ body
 .video-frame img
 {
     width: 50vw;
+}
+
+.video-selector
+{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    gap: 2.5vh;
+}
+
+.video-selector img
+{
+    height: 10vh;
 }
 
 .video-arrow
