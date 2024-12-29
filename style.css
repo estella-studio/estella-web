@@ -755,4 +755,17 @@ body
         width: 90%;
         height: 90%;
     }
+
+    /* Section 5 */
+
+    .game-store
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .game-store img
+    {
+        height: 7vw;
+    }
 }
