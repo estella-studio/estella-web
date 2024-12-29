@@ -521,6 +521,63 @@ body
 
 /* Section 5 */
 
+.dev-log
+{
+    height: 40vh;
+}
+
+.footer
+{
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: gray;
+    font-size: 3vh;
+}
+
+.footer-left,
+.footer-right
+{
+    margin: 1.75vw;
+}
+
+.footer-left
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2vh;
+}
+
+.footer-left-links
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2.5vh;
+}
+
+.footer-left-links a
+{
+    text-decoration: inherit;
+    color: black;
+}
+
+.footer-left-studio-logo img
+{
+    height: 10vw;
+    border-radius: 5px;
+}
+
+.footer-right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2vh;
+}
 
 /* Mobile view */
 
