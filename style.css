@@ -125,6 +125,11 @@ body
     right: 2vh;
 }
 
+.social-links a
+{
+    text-decoration: inherit;
+}
+
 .social-links img
 {
     transition: all 0.25s ease;
@@ -515,12 +520,126 @@ body
 .about-us-link-image-learn-more
 {
     border-radius: 5px;
-    /* width: 5vw; */
     background-color: #004aad;
 }
 
 /* Section 5 */
 
+.dev-log
+{
+    height: 40vh;
+}
+
+.footer
+{
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: gray;
+}
+
+.footer-left,
+.footer-right
+{
+    margin: 1.75vw;
+    width: 40vw;
+    height: 50vw;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.footer-left
+{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2vh;
+}
+
+.footer-left-links
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2.5vh;
+}
+
+.footer-left-links a
+{
+    text-decoration: inherit;
+    color: black;
+}
+
+.footer-left-studio-logo img
+{
+    height: 10vw;
+    border-radius: 5px;
+}
+
+.get-game-text
+{
+    align-self: center;
+    color: black;
+}
+
+.game-store
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.game-store img
+{
+    height: 5vh;
+}
+
+.footer-right
+{
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 2vh;
+}
+
+.footer-right-links
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-bottom: auto;
+    gap: 2.5vh;
+}
+
+.footer-right-links a
+{
+    text-decoration: inherit;
+}
+
+.footer-right-links img
+{
+    transition: all 0.25s ease;
+    height: 3vh;
+}
+
+.footer-right-links img:hover
+{
+    transition: all 0.25s ease;
+    transform: scale(1.1);
+}
+
+.footer-right-links-text-image
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: black;
+    font-size: 1.75vh;
+    gap: 2vw;
+}
 
 /* Mobile view */
 
@@ -635,5 +754,18 @@ body
     {
         width: 90%;
         height: 90%;
+    }
+
+    /* Section 5 */
+
+    .game-store
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .game-store img
+    {
+        height: 7vw;
     }
 }
