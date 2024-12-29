@@ -478,6 +478,25 @@ body
     font-size: 1.75vh;
 }
 
+.about-us-link
+{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 100px;
+    width: 10vw;
+    color: black;
+    font-size: 1.80vh;
+    background-color: yellow;
+}
+
+.about-us-link img
+{
+    height: 2.5vh;
+}
+
 /* Section 5 */
 
 
