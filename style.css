@@ -489,12 +489,26 @@ body
     width: 10vw;
     color: black;
     font-size: 1.80vh;
+    border-radius: 5px;
     background-color: yellow;
 }
 
 .about-us-link img
 {
+    margin: 0.5vw;
     height: 2.5vh;
+}
+
+.about-us-link-text-learn-more,
+.about-us-link-image-learn-more
+{
+    margin: 1vw;
+}
+
+.about-us-link-image-learn-more
+{
+    border-radius: 2px;
+    background-color: #004aad;
 }
 
 /* Section 5 */
