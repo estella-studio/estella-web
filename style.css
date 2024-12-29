@@ -232,6 +232,7 @@ body
 .picture-top-layer
 {
     position: absolute;
+    z-index: 2;
 }
 
 .picture-top-layer img
@@ -265,6 +266,7 @@ body
 
 .screenshot-arrow
 {
+    z-index: 3;
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -295,6 +297,7 @@ body
 
 .image-selector
 {
+    z-index: 3;
     display: flex;
     flex-direction: row;
     gap: 2vw;
@@ -436,6 +439,86 @@ body
 
 /* Section 4 */
 
+.about-us
+{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+    margin-top: 10vh;
+    width: 80vw;
+    height: 80vh;
+    background-image: url(assets/pictures/section-4/background-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.about-us-section
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 2vw;
+    width: 40vw;
+    height: 75vh;
+    background-color: rgba(0, 128, 0, 0.541);
+}
+
+.about-us-text,
+.about-us-link
+{
+    margin: 2vw;
+}
+
+.about-us p
+{
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.about-us-text-paragraph
+{
+    font-size: 1.75vh;
+}
+
+.about-us-link
+{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    width: auto;
+    color: black;
+    font-size: 1.80vh;
+    border-radius: 5px;
+    background-color: #ffde59;
+}
+
+.about-us-link img
+{
+    margin: 0.5vw;
+    height: 2.5vh;
+}
+
+.about-us-link-text-learn-more,
+.about-us-link-image-learn-more
+{
+    margin: 1vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+
+.about-us-link-image-learn-more
+{
+    border-radius: 5px;
+    /* width: 5vw; */
+    background-color: #004aad;
+}
+
 /* Section 5 */
 
 
@@ -539,5 +622,18 @@ body
     {
         transition: all 0.25s ease;
         width: 8.75vw;
+    }
+
+    /* Section 4 */
+
+    .about-us
+    {
+        justify-content: center;
+    }
+
+    .about-us-section
+    {
+        width: 90%;
+        height: 90%;
     }
 }
