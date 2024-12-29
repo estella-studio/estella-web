@@ -460,7 +460,7 @@ body
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin-right: 2vw;
+    margin: 2vw;
     width: 40vw;
     height: 75vh;
     background-color: rgba(0, 128, 0, 0.541);
@@ -488,10 +488,10 @@ body
     align-self: flex-end;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    min-width: 100px;
-    width: 10vw;
+    white-space: nowrap;
+    width: auto;
     color: black;
     font-size: 1.80vh;
     border-radius: 5px;
@@ -508,11 +508,14 @@ body
 .about-us-link-image-learn-more
 {
     margin: 1vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
 }
 
 .about-us-link-image-learn-more
 {
     border-radius: 5px;
+    /* width: 5vw; */
     background-color: #004aad;
 }
 
@@ -619,5 +622,18 @@ body
     {
         transition: all 0.25s ease;
         width: 8.75vw;
+    }
+
+    /* Section 4 */
+
+    .about-us
+    {
+        justify-content: center;
+    }
+
+    .about-us-section
+    {
+        width: 90%;
+        height: 90%;
     }
 }
