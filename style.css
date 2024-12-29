@@ -537,7 +537,6 @@ body
     flex-direction: row;
     justify-content: space-between;
     background-color: gray;
-    font-size: 3vh;
 }
 
 .footer-left,
@@ -545,6 +544,7 @@ body
 {
     margin: 1.75vw;
     width: 40vw;
+    height: 50vw;
     align-items: flex-start;
     flex-direction: column;
 }
@@ -576,6 +576,24 @@ body
     border-radius: 5px;
 }
 
+.get-game-text
+{
+    align-self: center;
+    color: black;
+}
+
+.game-store
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.game-store img
+{
+    height: 5vh;
+}
+
 .footer-right
 {
     right: 0;
@@ -603,7 +621,7 @@ body
 .footer-right-links img
 {
     transition: all 0.25s ease;
-    height: 5vw;
+    height: 3vh;
 }
 
 .footer-right-links img:hover
