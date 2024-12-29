@@ -439,6 +439,9 @@ body
 .about-us
 {
     position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     margin: auto;
     margin-top: 10vh;
     width: 80vw;
@@ -446,7 +449,34 @@ body
     background-image: url(assets/pictures/section-4/background-image.png);
 }
 
+.about-us-section
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: 2vw;
+    width: 40vw;
+    height: 75vh;
+    background-color: rgba(0, 128, 0, 0.541);
+}
 
+.about-us-text,
+.about-us-link
+{
+    margin: 2vw;
+}
+
+.about-us p
+{
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.about-us-text-paragraph
+{
+    font-size: 1.75vh;
+}
 
 /* Section 5 */
 
