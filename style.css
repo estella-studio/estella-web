@@ -527,7 +527,42 @@ body
 
 .dev-log
 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     height: 40vh;
+}
+
+.dev-log-link
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    margin-right: 5vw;
+    width: 25vw;
+    height: 10vh;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.dev-log-link-text,
+.dev-log-link-visit-page
+{
+    margin: 1vh;
+}
+
+.dev-log-link-visit-page
+{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.dev-log-link-visit-page img
+{
+    height: 3vh;
 }
 
 .footer
