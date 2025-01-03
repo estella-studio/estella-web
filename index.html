@@ -10,52 +10,52 @@
         <script src="index.js" defer></script>
     </head>
     <body>
-        <!-- <div class="container">
+        <div class="container">
             <div class="section" id="1">
-                <div class="studio-logo">
-                    <img src="assets/pictures/estella-logo.png">
+                <div class="header">
+                    <div class="studio-logo">
+                        <img src="assets/pictures/estella-logo.png">
+                    </div>
+                    <div class="social-links">
+                        <a
+                            href="https://instagram.com/estellagamedev/"
+                            title="Instagram"
+                            target="_blank"
+                            ><img src="assets/pictures/social-link/instagram.png" alt="Instagram"/>
+                        </a>
+                        <a
+                            href="https://twitter.com/EstellaGameDev"
+                            title="Twitter"
+                            target="_blank"
+                            ><img src="assets/pictures/social-link/twitter.png" alt="Twitter"/>
+                        </a>
+                        <a
+                            href="https://itch.io/"
+                            title="itch.io"
+                            target="_blank"
+                            ><img src="assets/pictures/social-link/itch-io.png" alt="itch.io"/>
+                        </a>
+                        <a
+                            href="https://reddit.com/r/EstellaGameDev"
+                            title="Reddit"
+                            target="_blank"
+                            ><img src="assets/pictures/social-link/reddit.png" alt="Reddit"/>
+                        </a>
+                    </div>
                 </div>
-                <div class="social-links">
-                    <a
-                        href="https://instagram.com/estellagamedev/"
-                        title="Instagram"
-                        style="text-decoration: none;"
-                        target="_blank"
-                        ><img src="assets/pictures/section-1/social-link/instagram.png" alt="Instagram"/>
-                    </a>
-                    <a
-                        href="https://twitter.com/EstellaGameDev"
-                        title="Twitter"
-                        style="text-decoration: none;"
-                        target="_blank"
-                        ><img src="assets/pictures/section-1/social-link/twitter.png"alt="Twitter"/>
-                    </a>
-                    <a
-                        href="https://itch.io/"
-                        title="itch.io"
-                        style="text-decoration: none;"
-                        target="_blank"
-                        ><img src="assets/pictures/section-1/social-link/itch-io.png" alt="itch.io"/>
-                    </a>
-                    <a
-                        href="https://reddit.com/r/EstellaGameDev"
-                        title="Reddit"
-                        style="text-decoration: none;"
-                        target="_blank"
-                        ><img src="assets/pictures/section-1/social-link/reddit.png" alt="Reddit"/>
-                    </a>
+                <div class="section-1-center-element">
+                    <div class="main-artwork">
+                        <img src="assets/pictures/section-1/main-artwork.png">
+                    </div>
+                    <div class="play-button">
+                        <img src="assets/pictures/section-1/play-button.png">
+                    </div>
                 </div>
-                <div class="artwork-main-center" style="margin: 0;">
-                    <img src="assets/pictures/section-1/artwork-0.png">
-                </div>
-                <div class="play-button">
-                    <img src="assets/pictures/section-1/play-button.png">
-                </div>
-                <div class="copyright-information">
+                <div class="game-information">
                     <div class="esrb">
                         <img src="assets/pictures/section-1/esrb.png">
                     </div>
-                    <div class="copyright-links">
+                    <div class="legal-links">
                         <a href="https://archlinux.org" target="_blank">Privacy Policy</a>
                         <a href="https://archlinux.org" target="_blank">Terms of Service</a>
                     </div>
@@ -64,62 +64,248 @@
                     </div>
                 </div>
                 <div class="arrow-down">
-                    <img src="assets/pictures/section-1/arrow-down.png">
+                    <a href="#2">
+                    <img src="assets/pictures/section-1/arrow-down.png"></a>
                 </div>
             </div>
             <div class="section" id="2">
-                <div class="image-frame">
-                    <img src="assets/pictures/section-2/frame.png" class="frame">
-                    <img src="assets/pictures/section-2/picture-0.png" class="main-image" id="main-image">
-                    <div class="arrow-left">
-                        <img src="assets/pictures/section-2/arrow-left.png" id="arrow-left">
-                    </div>
-                    <div class="arrow-right">
-                        <img src="assets/pictures/section-2/arrow-right.png" id="arrow-right">
-                    </div>
+                <div class="picture-top-layer">
+                    <img src="assets/pictures/section-2/picture-top-layer.png">
                 </div>
-                <div class="image-selector">
-                    <div class="thumbnail-frame">
-                        <img src="assets/pictures/section-2/picture-0.png" class="thumbnail" data-image="assets/pictures/section-2/picture-0.png">
+                <div class="screenshot">
+                    <div class="screenshot-frame">
+                        <img src="assets/pictures/section-2/frame.png">
                     </div>
-                    <div class="thumbnail-frame">
-                        <img src="assets/pictures/section-2/picture-1.png" class="thumbnail" data-image="assets/pictures/section-2/picture-1.png">
+                    <div class="screenshot-image">
+                        <img src="assets/pictures/section-2/screenshot-0.png" id="main-screenshot">
                     </div>
-                    <div class="thumbnail-frame">
-                        <img src="assets/pictures/section-2/picture-2.jpg" class="thumbnail" data-image="assets/pictures/section-2/picture-2.jpg">
+                    <div class="screenshot-arrow">
+                        <div class="screenshot-arrow-left" id="screenshot-arrow-left">
+                            <img src="assets/pictures/arrow-left.png" onmouseover="this.src='assets/pictures/arrow-left-hover.png';" onmouseout="this.src='assets/pictures/arrow-left.png';">
+                        </div>
+                        <div class="screenshot-arrow-right" id="screenshot-arrow-right">
+                            <img src="assets/pictures/arrow-right.png" onmouseover="this.src='assets/pictures/arrow-right-hover.png';" onmouseout="this.src='assets/pictures/arrow-right.png';">
+                        </div>
                     </div>
-                    <div class="thumbnail-frame">
-                        <img src="assets/pictures/section-2/picture-3.jpg" class="thumbnail" data-image="assets/pictures/section-2/picture-3.jpg">
+                    <div class="image-selector">
+                        <div class="screenshot-thumbnail">
+                            <div class="screenshot-thumbnail-frame">
+                                <img src="assets/pictures/section-2/thumbnail-frame.png" class="thumbnail">
+                            </div>
+                            <div class="screenshot-thumbnail-image">
+                                <img src="assets/pictures/section-2/screenshot-0.png">
+                            </div>
+                        </div>
+                        <div class="screenshot-thumbnail">
+                            <div class="screenshot-thumbnail-frame">
+                                <img src="assets/pictures/section-2/thumbnail-frame.png" class="thumbnail">
+                            </div>
+                            <div class="screenshot-thumbnail-image">
+                                <img src="assets/pictures/section-2/screenshot-1.png">
+                            </div>
+                        </div>
+                        <div class="screenshot-thumbnail">
+                            <div class="screenshot-thumbnail-frame">
+                                <img src="assets/pictures/section-2/thumbnail-frame.png" class="thumbnail">
+                            </div>
+                            <div class="screenshot-thumbnail-image">
+                                <img src="assets/pictures/section-2/screenshot-2.png">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="section" id="3">
-                <div class="video-frame">
-                    <img src="assets/pictures/section-3/frame.png" class="frame">
-                    <video id="main-video" class="main-video" controls>
-                        <source src="assets/videos/section-3/video-0.mp4" type="video/mp4">
-                    </video>
-                    <div class="arrow-left" id="video-arrow-left">
-                        <img src="assets/pictures/section-3/arrow-left.png">
+                <div class="video">
+                    <div class="video-selector">
+                        <img src="assets/pictures/section-3/video-0.png">
+                        <img src="assets/pictures/section-3/video-1.png">
+                        <img src="assets/pictures/section-3/video-1.png">
                     </div>
-                    <div class="arrow-right" id="video-arrow-right">
-                        <img src="assets/pictures/section-3/arrow-right.png">
+                    <div class="video-main-section">
+                        <div class="main-video">
+                            <div class="video-player">
+                                <video class="main-video" id="main-video" controls>
+                                    <source src="assets/videos/section-3/video-0.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="video-frame">
+                                <img src="assets/pictures/section-2/frame.png">
+                            </div>
+                        </div>
+                        <div class="video-arrow">
+                            <div class="video-arrow-left" id="video-arrow-left">
+                                <img src="assets/pictures/arrow-left.png" onmouseover="this.src='assets/pictures/arrow-left-hover.png';" onmouseout="this.src='assets/pictures/arrow-left.png';">
+                            </div>
+                            <div class="video-dot">
+                                <img src="assets/pictures/section-3/dot.png">
+                            </div>
+                            <div class="video-dot">
+                                <img src="assets/pictures/section-3/dot.png">
+                            </div>
+                            <div class="video-dot">
+                                <img src="assets/pictures/section-3/dot.png">
+                            </div>
+                            <div class="video-arrow-right" id="video-arrow-right">
+                                <img src="assets/pictures/arrow-right.png" onmouseover="this.src='assets/pictures/arrow-right-hover.png';" onmouseout="this.src='assets/pictures/arrow-right.png';">
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="video-selector">
-                    <img src="assets/pictures/section-3/video-0.png" class="thumbnail" data-video="assets/videos/section-3/video-0.mp4">
-                    <img src="assets/pictures/section-3/video-1.png" class="thumbnail" data-video="assets/videos/section-3/video-1.mp4">
-                    <img src="assets/pictures/section-3/video-2.png" class="thumbnail" data-video="assets/videos/section-3/video-2.mp4">
-                </div>
-                <div class="video-indicator">
-                    <img src="assets/pictures/section-3/dot.png" class="dot" id="dot-0">
-                    <img src="assets/pictures/section-3/dot.png" class="dot" id="dot-1">
-                    <img src="assets/pictures/section-3/dot.png" class="dot" id="dot-2">
                 </div>
             </div>
             <div class="section" id="4">
+                <div class="about-us">
+                    <div class="about-us-section">
+                        <div class="about-us-text">
+                            <div class="about-us-text-heading">
+                                <h1>About Us</h1>
+                            </div>
+                            <div class="about-us-text-paragraph">
+                                <p>Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf</p>
+                                <p>Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf</p>
+                                <p>Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf Asdf</p>
+                                <p>Asdf</p>
+                            </div>
+                        </div>
+                        <div class="about-us-link">
+                            <div class="about-us-link-text-learn-more">
+                                <t>Learn More</t>
+                            </div>
+                            <div class="about-us-link-image-learn-more">
+                                <a 
+                                    href="./developers/"
+                                    title="Learn More"
+                                    target="_blank"
+                                    ><img src="assets/pictures/arrow-right-small.svg" alt="Learn More">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="section" id="5">
+                <div class="dev-log">
+                    <!-- <div class="dev-log-slider"></div> -->
+                     <div class="dev-log-link">
+                        <div class="dev-log-link-text">
+                            <t>Dev Log</t>
+                        </div>
+                        <div class="dev-log-link-visit-page">
+                            <div class="dev-log-link-visit-page-text">
+                                <t>Visit page</t>
+                            </div>
+                            <div class="dev-log-link-visit-page-arrow">
+                                <a
+                                    href="https://dev.estellastudiodev.com"
+                                    title="Visit page"
+                                    target="_blank"
+                                    ><img src="assets/pictures/arrow-right-small.svg" alt="Visit page">
+                                </a>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+                <div class="footer">
+                    <div class="footer-left">
+                        <div class="footer-left-studio-logo">
+                            <img src="assets/pictures/estella-logo.png">
+                        </div>
+                        <div class="footer-left-links">
+                            <a
+                                href="./developers/"
+                                target="_blank"
+                                >About Us
+                            </a>
+                            <a
+                                href="./developers/"
+                                target="_blank"
+                                >Dev Log
+                            </a>
+                            <a
+                                href="./developers/"
+                                target="_blank"
+                                >Studio
+                            </a>
+                        </div>
+                        <div class="footer-right-game-store">
+                            <div class="get-game-text">
+                                <h2>Get gameName</h2>
+                            </div>
+                            <div class="game-store">
+                                <a
+                                    href="https://store.steampowered.com/"
+                                    title="Steam"
+                                    target="_blank"
+                                    ><img src="assets/pictures/game-store/steam.png" alt="Steam"/>
+                                </a>
+                                <a
+                                    href="https://itch.io/"
+                                    title="itch.io"
+                                    target="_blank"
+                                    ><img src="assets/pictures/game-store/itch-io.png" alt="itch.io"/>
+                                </a>
+                                <a
+                                    href="https://store.epicgames.com/en-US/"
+                                    title="Epic Games"
+                                    target="_blank"
+                                    ><img src="assets/pictures/game-store/epic-games.png" alt="Epic Games"/>
+                                </a>
+                                <a
+                                    href="https://www.gog.com/en/"
+                                    title="GOG"
+                                    target="_blank"
+                                    ><img src="assets/pictures/game-store/gog.png" alt="GOG"/>
+                                </a>
+                                <a
+                                    href="https://en.wikipedia.org/wiki/List_of_software_package_management_systems"
+                                    title="Your distribution's package manager"
+                                    target="_blank"
+                                    ><img src="assets/pictures/game-store/linux.png" alt="Your distribution's package manager"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="footer-right-links">
+                            <div class="footer-right-links-text-image">
+                                <t>@estellagamedev</t>
+                                <a
+                                    href="https://instagram.com/estellagamedev/"
+                                    title="Instagram"
+                                    target="_blank"
+                                    ><img src="assets/pictures/social-link/instagram.png" alt="Instagram"/>
+                                </a>
+                            </div>
+                            <div class="footer-right-links-text-image">
+                                <t>@EstellaGameDev</t>
+                                <a
+                                    href="https://twitter.com/EstellaGameDev"
+                                    title="Twitter"
+                                    target="_blank"
+                                    ><img src="assets/pictures/social-link/twitter.png" alt="Twitter"/>
+                                </a>
+                            </div>
+                            <div class="footer-right-links-text-image">
+                                <t>@EstellaGameDev</t>
+                                <a
+                                    href="https://itch.io/"
+                                    title="itch.io"
+                                    target="_blank"
+                                    ><img src="assets/pictures/social-link/itch-io.png" alt="itch.io"/>
+                                </a>
+                            </div>
+                            <div class="footer-right-links-text-image">
+                                <t>@EstellaGameDev</t>
+                                <a
+                                    href="https://reddit.com/r/EstellaGameDev"
+                                    title="Reddit"
+                                    target="_blank"
+                                    ><img src="assets/pictures/social-link/reddit.png" alt="Reddit"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div> -->
     </body>
