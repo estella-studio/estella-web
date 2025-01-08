@@ -167,20 +167,38 @@ document.addEventListener('DOMContentLoaded', () => {
         thumbnail.addEventListener('click', () => {
             currentScreenshotIndex = index;
             updateScreenshot();
+            resetAutoSlide();
         });
     });
 
     screenshotArrowLeft.addEventListener('click', () => {
         currentScreenshotIndex = (currentScreenshotIndex > 0) ? currentScreenshotIndex - 1 : screenshots.length - 1;
         updateScreenshot();
+        resetAutoSlide();
     });
 
     screenshotArrowRight.addEventListener('click', () => {
         currentScreenshotIndex = (currentScreenshotIndex < screenshots.length - 1) ? currentScreenshotIndex + 1 : 0;
         updateScreenshot();
+        resetAutoSlide();
     });
 
+    function moveRight() {
+        currentScreenshotIndex = (currentScreenshotIndex + 1) % screenshots.length;
+        updateScreenshot();
+    }
+
+    function startAutoSlide() {
+        autoSlide = setInterval(moveRight, 7500);
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlide);
+        startAutoSlide();
+    }
+
     updateScreenshot();
+    startAutoSlide();
 });
 
 /* Video player */
