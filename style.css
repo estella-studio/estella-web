@@ -243,15 +243,14 @@ body
 
 .screenshot-frame
 {
-    z-index: 1;
+    z-index: 0;
 }
 
 .screenshot-image
 {
     position: absolute;
-    top: 59px; /* Adjust to frame */
     left: 50%;
-    transform: translate(-49.6%); /* Adjust to frame */
+    transform: translate(-49.6%, -4%); /* Adjust to frame */
 }
 
 .screenshot-frame img
