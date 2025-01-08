@@ -237,7 +237,6 @@ body
 .picture-top-layer
 {
     position: absolute;
-    z-index: 2;
 }
 
 .picture-top-layer img
@@ -271,7 +270,6 @@ body
 
 .screenshot-arrow
 {
-    z-index: 3;
     position: absolute;
     display: flex;
     flex-direction: row;
