@@ -234,6 +234,13 @@ body
     top: 5vh;
 }
 
+.screenshot-main-content
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .screenshot-frame
 {
     z-index: 1;
@@ -242,41 +249,25 @@ body
 .screenshot-image
 {
     position: absolute;
-    top: 20px;
+    top: 59px; /* Adjust to frame */
+    left: 50%;
+    transform: translate(-49.6%); /* Adjust to frame */
 }
 
 .screenshot-frame img
 {
-    width: 40vw;
-    min-width: 400px;
+    height: 70vh;
 }
 
 .screenshot-image img
 {
-    width: 37vw;
-    min-width: 370px;
-}
-
-.screenshot-arrow
-{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    gap: max(42vw, 400px);
-}
-
-.screenshot-arrow img
-{
-    width: 5vw;
-    min-width: 50px;
+    height: 49.535vh; /* Adjust to frame */
 }
 
 .screenshot-arrow-left img,
 .screenshot-arrow-right img
 {
+    width: 5vw;
     transition: all 0.25s ease;
 }
 
@@ -314,12 +305,12 @@ body
 .screenshot-thumbnail-frame
 {
     position: absolute;
-    transform: translateX(-1vw) translateY(-0.25vh); /* Temp to adjust with screenshot thumbnail */
+    transform: translateX(-0.8vw) translateY(-0.25vh); /* Adjust to image */
 }
 
 .screenshot-thumbnail-frame img
 {
-    width: 12vw;
+    width: 11.45vw;
 }
 
 .screenshot-thumbnail-image img
@@ -713,17 +704,12 @@ body
 
     .screenshot-frame img
     {
-        width: 80vw;
+        height: 80vh;
     }
 
     .screenshot-image img
     {
-        width: 76vw;
-    }
-
-    .screenshot-arrow
-    {
-        gap: 82vw
+        height: 76vh;
     }
 
     .screenshot-arrow img
