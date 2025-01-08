@@ -698,22 +698,31 @@ body
 
     .screenshot
     {
-        margin-top: 50%;
+        transform: translateY(50%);
     }
 
     .screenshot-frame img
     {
-        height: 80vh;
+        height: auto;
+        width: 80vw;
     }
 
     .screenshot-image img
     {
-        height: 76vh;
+        height: auto;
+        width: 71.2vw;
     }
 
-    .screenshot-arrow img
+    .screenshot-arrow-left img,
+    .screenshot-arrow-right img
     {
         width: 8vw;
+    }
+
+    .image-selector
+    {
+        margin-top: 5vh;
+        transform: scale(2.5);
     }
 
     /* Section 3 */
