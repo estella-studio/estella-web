@@ -148,15 +148,13 @@ body
 
 .main-artwork img
 {
-    width: 45vw;
-    min-width: 350px;
+    height: 50vh;
 }
 
 .play-button img
 {
     transition: all 0.25s ease;
-    width: 20vw;
-    min-width: 125px;
+    height: 20vh;
 }
 
 .play-button img:hover
@@ -667,17 +665,20 @@ body
 
     .section-1-center-element
     {
-        margin-top: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .main-artwork img
     {
-        width: 80vw;
+        height: 30vh;
     }
 
     .play-button img
     {
-        width: 50vw;
+        height: 20vh;
     }
 
     .game-information
