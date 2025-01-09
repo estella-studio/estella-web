@@ -48,7 +48,7 @@ body
     height: 100vh;
     scroll-behavior: smooth;
     overflow: auto;
-    /* scroll-snap-type: y mandatory; */ /* Disable for debugging */
+    scroll-snap-type: y mandatory; /* Disable for debugging */
 }
 
 .section
@@ -365,7 +365,7 @@ body
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2.5vh;
+    gap: 2vw;
 }
 
 .video-thumbnail-frame
@@ -376,7 +376,7 @@ body
 .video-selector img
 {
     transition: all 0.25s ease;
-    width: 12vw;
+    width: 11vw;
 }
 
 .video-thumbnail-frame img
