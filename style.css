@@ -48,7 +48,7 @@ body
     height: 100vh;
     scroll-behavior: smooth;
     overflow: auto;
-    scroll-snap-type: y mandatory; /* Disable for debugging */
+    /* scroll-snap-type: y mandatory; /* Disable for debugging */
 }
 
 .section
@@ -738,11 +738,12 @@ body
     .video-selector
     {
         flex-direction: row;
+        gap: 8vw;
     }
 
     .video-selector img
     {
-        width: 20vw;
+        width: 25vw;
     }
 
     .video-frame img
