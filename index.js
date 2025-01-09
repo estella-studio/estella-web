@@ -145,7 +145,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const mainScreenshot = document.getElementById('main-screenshot');
-    const screenshotThumbnails = document.querySelectorAll('.image-selector .thumbnail');
+    const screenshotThumbnails = document.querySelectorAll('.image-selector .screenshot-image-thumbnail');
     const screenshotArrowLeft = document.getElementById('screenshot-arrow-left');
     const screenshotArrowRight = document.getElementById('screenshot-arrow-right');
 
@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const mainVideo = document.getElementById('main-video');
-    const videoThumbnails = document.querySelectorAll('.video-selector img');
+    const videoThumbnails = document.querySelectorAll('.video-selector .video-selector-thumbnail');
     const videoArrowLeft = document.getElementById('video-arrow-left');
     const videoArrowRight = document.getElementById('video-arrow-right');
     const videoDots = document.querySelectorAll('.video-dot img');
