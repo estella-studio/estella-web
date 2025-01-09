@@ -48,7 +48,7 @@ body
     height: 100vh;
     scroll-behavior: smooth;
     overflow: auto;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */ /* Disable for debugging */
 }
 
 .section
@@ -368,27 +368,20 @@ body
     gap: 2.5vh;
 }
 
+.video-thumbnail-frame
+{
+    position: absolute;
+}
+
 .video-selector img
 {
     transition: all 0.25s ease;
     width: 12vw;
 }
 
-.video-selector img:hover
+.video-thumbnail-frame img
 {
-    transition: all 0.25s ease;
-    transform: scale(1.05);
-}
-
-.video-selector img.active
-{
-    transition: all 0.25s ease;;
-    transform: scale(1.1);
-}
-
-.video-thumbnail-frame
-{
-    position: absolute;
+    transform: scale(1.2);
 }
 
 .video-arrow
