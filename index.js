@@ -246,3 +246,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateVideo();
 });
+
+/* Video audio control */
+
+document.addEventListener('DOMContentLoaded', () => {
+    const muteButton = document.querySelector('.main-video-audio-control');
+    const mainVideo = document.getElementById('main-video');
+
+    muteButton.addEventListener('click', () => {
+        if (mainVideo.muted) {
+            mainVideo.muted = false;
+            muteButton.textContent = 'Mute';
+        } else {
+            mainVideo.muted = true;
+            muteButton.textContent = 'Unmute';
+        }
+    });
+});

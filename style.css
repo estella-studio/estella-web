@@ -48,7 +48,7 @@ body
     height: 100vh;
     scroll-behavior: smooth;
     overflow: auto;
-    scroll-snap-type: y mandatory; /* Disable for debugging */
+    /* scroll-snap-type: y mandatory; /* Disable for debugging */
 }
 
 .section
@@ -346,6 +346,11 @@ body
 .main-video
 {
     width: 35.6vw;
+}
+
+.main-video-audio-control
+{
+    
 }
 
 .video-frame
