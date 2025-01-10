@@ -54,7 +54,7 @@ body
     height: 100vh;
     scroll-behavior: smooth;
     overflow: auto;
-    /* scroll-snap-type: y mandatory; /* Disable for debugging */
+    scroll-snap-type: y mandatory; /* Disable for debugging */
 }
 
 .section
