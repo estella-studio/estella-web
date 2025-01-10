@@ -10,6 +10,12 @@
     src: url(assets/fonts/cormorant-garamond/CormorantGaramond-SemiBold.ttf);
 }
 
+@font-face
+{
+    font-family: "JetBrains Mono";
+    src: url(assets/fonts/jetbrains-mono/fonts/ttf/JetBrainsMono-SemiBold.ttf);
+}
+
 @keyframes arrow-down-animation
 {
     0%, 100%
@@ -341,11 +347,34 @@ body
 {
     z-index: 1;
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
 }
 
 .main-video
 {
     width: 35.6vw;
+}
+
+.main-video-audio-control
+{
+    transition: all 0.25s ease;
+    align-self: flex-end;
+    height: 5vh;
+    width: 10vw;
+    font-size: 1.5vh;
+    font-family: "Funnel Sans";
+    border-radius: 5px;
+    border: none;
+}
+
+.main-video-audio-control:hover
+{
+    transition: all 0.25s ease;
+    transform: scale(1.05);
+    background-color: rgb(190, 190, 190);
+    box-shadow: 0px 0px 1vh white;
 }
 
 .video-frame
