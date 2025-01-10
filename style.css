@@ -10,6 +10,12 @@
     src: url(assets/fonts/cormorant-garamond/CormorantGaramond-SemiBold.ttf);
 }
 
+@font-face
+{
+    font-family: "JetBrains Mono";
+    src: url(assets/fonts/jetbrains-mono/fonts/ttf/JetBrainsMono-SemiBold.ttf);
+}
+
 @keyframes arrow-down-animation
 {
     0%, 100%
@@ -48,7 +54,7 @@ body
     height: 100vh;
     scroll-behavior: smooth;
     overflow: auto;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory; /* Disable for debugging */
 }
 
 .section
@@ -341,11 +347,34 @@ body
 {
     z-index: 1;
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
 }
 
 .main-video
 {
     width: 35.6vw;
+}
+
+.main-video-audio-control
+{
+    transition: all 0.25s ease;
+    align-self: flex-end;
+    height: 5vh;
+    width: 10vw;
+    font-size: 1.5vh;
+    font-family: "Funnel Sans";
+    border-radius: 5px;
+    border: none;
+}
+
+.main-video-audio-control:hover
+{
+    transition: all 0.25s ease;
+    transform: scale(1.05);
+    background-color: rgb(190, 190, 190);
+    box-shadow: 0px 0px 1vh white;
 }
 
 .video-frame
@@ -365,25 +394,23 @@ body
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2.5vh;
+    gap: 2vw;
+}
+
+.video-thumbnail-frame
+{
+    position: absolute;
 }
 
 .video-selector img
 {
     transition: all 0.25s ease;
-    width: 12vw;
+    width: 11vw;
 }
 
-.video-selector img:hover
+.video-thumbnail-frame img
 {
-    transition: all 0.25s ease;
-    transform: scale(1.05);
-}
-
-.video-selector img.active
-{
-    transition: all 0.25s ease;;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .video-arrow
@@ -740,11 +767,12 @@ body
     .video-selector
     {
         flex-direction: row;
+        gap: 8vw;
     }
 
     .video-selector img
     {
-        width: 20vw;
+        width: 25vw;
     }
 
     .video-frame img
