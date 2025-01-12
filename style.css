@@ -54,7 +54,7 @@ body
     height: 100vh;
     scroll-behavior: smooth;
     overflow: auto;
-    scroll-snap-type: y mandatory; /* Disable for debugging */
+    /* scroll-snap-type: y mandatory; /* Disable for debugging */
 }
 
 .section
@@ -248,14 +248,19 @@ body
     transform: translate(-49.6%, -4%); /* Adjust to frame */
 }
 
-.screenshot-frame img
+.main-screenshot img
 {
-    height: 70vh;
+    height: 65vh; /* Adjust screenshot and frame size */
 }
 
 .screenshot-image img
 {
-    height: 49.535vh; /* Adjust to frame */
+    transform: scale(0.707); /* Adjust to frame */
+}
+
+.screenshot-frame img
+{
+    transform: translate(0.09%, -0.9%); /* Adjust to image */
 }
 
 .screenshot-arrow-left img,
