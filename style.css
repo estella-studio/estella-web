@@ -248,14 +248,25 @@ body
     transform: translate(-49.6%, -4%); /* Adjust to frame */
 }
 
-.screenshot-frame img
+.main-screenshot img
 {
-    height: 70vh;
+    height: 65vh; /* Adjust screenshot and frame size */
 }
 
 .screenshot-image img
 {
-    height: 49.535vh; /* Adjust to frame */
+    transform: scale(0.707); /* Adjust to frame */
+}
+
+.screenshot-frame img
+{
+    transform: translate(0.09%, -0.9%); /* Adjust to image */
+}
+
+.screenshot-arrow-left,
+.screenshot-arrow-right
+{
+    z-index: 1;
 }
 
 .screenshot-arrow-left img,
@@ -717,19 +728,23 @@ body
 
     .screenshot
     {
-        transform: translateY(50%);
+        margin-top: 50%;
     }
 
-    .screenshot-frame img
+    .main-screenshot img
     {
+        width: 80vw; /* Adjust screenshot and frame size */
         height: auto;
-        width: 80vw;
     }
 
     .screenshot-image img
     {
-        height: auto;
-        width: 71.2vw;
+        transform: scale(0.89); /* Adjust to frame */
+    }
+
+    .screenshot-frame img
+    {
+        transform: translate(0.09%, -0.5%); /* Adjust to image */
     }
 
     .screenshot-arrow-left img,
