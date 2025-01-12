@@ -722,19 +722,23 @@ body
 
     .screenshot
     {
-        transform: translateY(50%);
+        margin-top: 50%;
     }
 
-    .screenshot-frame img
+    .main-screenshot img
     {
-        height: auto;
         width: 80vw;
+        height: auto;
     }
 
     .screenshot-image img
     {
-        height: auto;
-        width: 71.2vw;
+        transform: scale(0.89); /* Adjust to frame */
+    }
+
+    .screenshot-frame img
+    {
+        transform: translate(0.09%, -0.5%); /* Adjust to image */
     }
 
     .screenshot-arrow-left img,
