@@ -28,15 +28,11 @@
     }
 }
 
-html, body
+body
 {
     max-width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
-}
-
-body
-{
     margin: 0;
     font-family: "Funnel Sans", sans-serif;    
     font-size: 2vh;
@@ -54,7 +50,7 @@ body
     height: 100vh;
     scroll-behavior: smooth;
     overflow: auto;
-    /* scroll-snap-type: y mandatory; /* Disable for debugging */
+    scroll-snap-type: y mandatory; /* Disable to keep scroll position on reload */
 }
 
 .section
