@@ -54,7 +54,7 @@ body
     height: 100vh;
     scroll-behavior: smooth;
     overflow: auto;
-    scroll-snap-type: y mandatory; /* Disable for debugging */
+    /* scroll-snap-type: y mandatory; /* Disable for debugging */
 }
 
 .section
@@ -544,12 +544,38 @@ body
 
 /* Section 5 */
 
-.dev-log
+.footer-upper
 {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     height: 40vh;
+}
+
+.footer-upper-game-store
+{
+    align-self: flex-end;
+    margin: 2vw;
+    color: white;
+}
+
+.get-game-text
+{
+    align-self: center;
+}
+
+.game-store
+{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.game-store img
+{
+    height: 5vh;
 }
 
 .dev-log-link
@@ -628,24 +654,6 @@ body
 {
     height: 10vw;
     border-radius: 5px;
-}
-
-.get-game-text
-{
-    align-self: center;
-    color: black;
-}
-
-.game-store
-{
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-}
-
-.game-store img
-{
-    height: 5vh;
 }
 
 .footer-right
@@ -827,7 +835,7 @@ body
     .game-store
     {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .game-store img
