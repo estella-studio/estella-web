@@ -28,15 +28,11 @@
     }
 }
 
-html, body
+body
 {
     max-width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
-}
-
-body
-{
     margin: 0;
     font-family: "Funnel Sans", sans-serif;    
     font-size: 2vh;
@@ -54,7 +50,7 @@ body
     height: 100vh;
     scroll-behavior: smooth;
     overflow: auto;
-    scroll-snap-type: y mandatory; /* Disable for debugging */
+    scroll-snap-type: y mandatory; /* Disable to keep scroll position on reload */
 }
 
 .section
@@ -544,12 +540,45 @@ body
 
 /* Section 5 */
 
-.dev-log
+.footer-upper
 {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     height: 40vh;
+}
+
+.footer-upper-game-store
+{
+    align-self: flex-end;
+    margin: 2vw;
+    color: white;
+}
+
+.get-game-text
+{
+    align-self: center;
+}
+
+.game-store
+{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.game-store img
+{
+    transition: all 0.25s ease;
+    height: 5vh;
+}
+
+.game-store img:hover
+{
+    transition: all 0.25s ease;
+    transform: scale(1.1);
 }
 
 .dev-log-link
@@ -591,6 +620,9 @@ body
     flex-direction: row;
     justify-content: space-between;
     background-color: gray;
+    border-radius: 10px;
+    margin: 1vw;
+    box-shadow: 0px 0px 0.5vw white;
 }
 
 .footer-left,
@@ -628,24 +660,6 @@ body
 {
     height: 10vw;
     border-radius: 5px;
-}
-
-.get-game-text
-{
-    align-self: center;
-    color: black;
-}
-
-.game-store
-{
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-}
-
-.game-store img
-{
-    height: 5vh;
 }
 
 .footer-right
@@ -828,6 +842,7 @@ body
     {
         flex-direction: column;
         align-items: flex-start;
+        margin: 2.5vw;
     }
 
     .game-store img
