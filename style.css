@@ -588,6 +588,7 @@ body
     flex-direction: row;
     height: 35vh;
     gap: 2vw;
+    margin: 2vw;
 }
 
 .dev-log a
