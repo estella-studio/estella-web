@@ -581,21 +581,16 @@ body
     transform: scale(1.1);
 }
 
-.post {
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
+.post
+{
+    text-align: left;
+    margin: 1vh;
 }
-.post-title {
-    font-size: 18px;
-    color: #333;
+
+.post-title
+{
+    color: white;
     text-decoration: none;
-}
-.post-title:hover {
-    text-decoration: underline;
-}
-.post-date {
-    color: #666;
-    font-size: 14px;
 }
 
 .dev-log-link
