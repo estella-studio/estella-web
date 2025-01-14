@@ -266,21 +266,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* Dev Log last n posts */
 
-fetch('https://blog.mozilla.org/wp-json/wp/v2/posts?per_page=2')
+fetch('https://blog.mozilla.org/wp-json/wp/v2/posts?per_page=3')
 .then(response => response.json())
 .then(posts => {
     let postsHtml = '';
-    posts.forEach(post => {
+    posts.forEach(post =>{
         postsHtml += `
             <div class="post">
                 <a href="${post.link}" class="post-title" target="_blank">${post.title.rendered}</a>
-                <div class="post-date">${new Date(post.date).toLocaleDateString()}</div>
+                <div class="content">${post.content}</div>
+                <div class="post-date">${new Date(post.date).toISOString().split('T')[0]}</div>
             </div>
         `;
     });
-    document.getElementById('posts-container').innerHTML = postsHtml;
+    document.querySelector('.dev-log').innerHTML = postsHtml;
 })
 .catch(error => {
     console.error('Error fetching posts:', error);
-    document.getElementById('posts-container').innerHTML = '<p>Failed to load posts.</p>';
+    document.querySelector('.dev-log').innerHTML = '<p>Failed to load posts.</p>';
 });
