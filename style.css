@@ -591,10 +591,11 @@ body
     margin: 2vw;
 }
 
-.dev-log a
+.dev-log-link-view-more
 {
-    color: inherit;
-    text-decoration: inherit;
+    position: absolute;
+    height: 100%;
+    width: 25vw;
 }
 
 .post
@@ -645,6 +646,7 @@ body
 
 .dev-log-link
 {
+    transition: all 0.25s ease;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -652,6 +654,12 @@ body
     width: 10vw;
     background-color: rgba(0, 128, 0, 0.658);
     border-radius: 5px;
+}
+
+.dev-log-link:hover
+{
+    transition: all 0.25s ease;
+    transform: scale(1.1);
 }
 
 .dev-log-link-text,
