@@ -587,7 +587,7 @@ body
     display: flex;
     flex-direction: row;
     height: 35vh;
-    gap: 2.5vw;
+    gap: 2vw;
 }
 
 .dev-log a
@@ -634,7 +634,7 @@ body
     text-align: left;
     margin-right: 5vw;
     width: 10vw;
-    height: 20vh;
+    height: 15vh;
     background-color: rgba(0, 128, 0, 0.658);
     border-radius: 5px;
 }
