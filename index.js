@@ -266,14 +266,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* Dev Log last n posts */
 
-fetch('https://blog.mozilla.org/wp-json/wp/v2/posts?per_page=3&_embed=true')
+fetch('https://techcrunch.com/wp-json/wp/v2/posts?per_page=3&_embed=true')
 .then(response => response.json())
 .then(posts => {
     let postsHtml = '';
     posts.forEach(post => {
         let featuredImage = post._embedded['wp:featuredmedia'] ? post._embedded['wp:featuredmedia'][0].source_url : '';
         let postTitle = post.title.rendered.substring(0, 64) + (post.title.rendered.length > 64 ? '...' : '');
-        let contentPreview = post.content.rendered.substring(0, 64) + (post.content.rendered.length > 64 ? '...' : '');
+        let contentPreview = post.content.rendered.substring(0, 128) + (post.content.rendered.length > 128 ? '...' : '');
 
         postsHtml += `
             <div class="post">
