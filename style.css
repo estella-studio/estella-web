@@ -50,7 +50,7 @@ body
     height: 100vh;
     scroll-behavior: smooth;
     overflow: auto;
-    scroll-snap-type: y mandatory; /* Disable to keep scroll position on reload */
+    /* scroll-snap-type: y mandatory; /* Disable to keep scroll position on reload */
 }
 
 .section
@@ -579,6 +579,23 @@ body
 {
     transition: all 0.25s ease;
     transform: scale(1.1);
+}
+
+.post {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.post-title {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+.post-title:hover {
+    text-decoration: underline;
+}
+.post-date {
+    color: #666;
+    font-size: 14px;
 }
 
 .dev-log-link
