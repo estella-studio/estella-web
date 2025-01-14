@@ -266,15 +266,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* Dev Log last n posts */
 
-fetch('https://blog.mozilla.org/wp-json/wp/v2/posts?per_page=3')
+fetch('https://blog.mozilla.org/wp-json/wp/v2/posts?per_page=3&_embed=true')
 .then(response => response.json())
 .then(posts => {
     let postsHtml = '';
-    posts.forEach(post =>{
+    posts.forEach(post => {
+        let featuredImage = post._embedded['wp:featuredmedia'] ? post._embedded['wp:featuredmedia'][0].source_url : '';
+        let postTitle = post.title.rendered.substring(0, 64) + (post.title.rendered.length > 64 ? '...' : '');
+        let contentPreview = post.content.rendered.substring(0, 64) + (post.content.rendered.length > 64 ? '...' : '');
+
         postsHtml += `
             <div class="post">
-                <a href="${post.link}" class="post-title" target="_blank">${post.title.rendered}</a>
-                <div class="content">${post.content}</div>
+                <div>${featuredImage ? `<img src="${featuredImage}" alt="${post.title.rendered}" class="featured-image" />` : ''}</div>
+                <a href="${post.link}" class="post-title" target="_blank">${postTitle}</a>
+                <div class="post-content">${contentPreview}</div>
                 <div class="post-date">${new Date(post.date).toISOString().split('T')[0]}</div>
             </div>
         `;
