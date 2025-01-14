@@ -50,7 +50,7 @@ body
     height: 100vh;
     scroll-behavior: smooth;
     overflow: auto;
-    /* scroll-snap-type: y mandatory; /* Disable to keep scroll position on reload */
+    scroll-snap-type: y mandatory; /* Disable to keep scroll position on reload */
 }
 
 .section
@@ -893,6 +893,16 @@ body
     }
 
     /* Section 5 */
+
+    .footer-upper
+    {
+        height: 50vh;
+    }
+
+    .footer
+    {
+        height: 50vh;
+    }
 
     .post img
     {
