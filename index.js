@@ -277,9 +277,10 @@ fetch('https://www.omgubuntu.co.uk/wp-json/wp/v2/posts?per_page=3&_embed=true')
 
         postsHtml += `
             <div class="post">
+                <a class="post-link" href="${post.link}" target="_blank"></a>
                 <div class="post-content">
                     <div>${featuredImage ? `<img src="${featuredImage}" alt="${post.title.rendered}" class="featured-image" />` : ''}</div>
-                    <a href="${post.link}" class="post-title" target="_blank">${postTitle}</a>
+                    <div class-post-title>${postTitle}</div>
                 </div>
                 <div class="post-date">${new Date(post.date).toISOString().split('T')[0]}</div>
             </div>

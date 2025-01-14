@@ -599,12 +599,26 @@ body
 
 .post
 {
+    transition: all 0.25s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 25vw;
     background-color: rgba(0, 128, 58, 0.808);
     border-radius: 5px;
+}
+
+.post-link
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.post:hover
+{
+    transition: all 0.25s ease;
+    transform: scale(1.1);
 }
 
 .post img
