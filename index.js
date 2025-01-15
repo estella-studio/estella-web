@@ -289,8 +289,24 @@ fetch('https://dev.estellastudiodev.com/wp-json/wp/v2/posts?per_page=3&_embed=tr
     document.querySelector('.dev-log').innerHTML = postsHtml;
 })
 .catch(error => {
+    let errorHtml =
+    `
+        <div class="post-error">
+            <div class="post-error-message">
+                <p>Error fetching post</p>
+            </div>
+            <div class="post-error-visit-page">
+                <t>Please visit </t>
+                <a
+                    href="https://dev.estellastudiodev.com";
+                    target="_blank";
+                >this page</a>
+                <t> to view dev log</t>
+            </div>
+        </div>
+    `;
     console.error('Error fetching posts:', error);
-    document.querySelector('.dev-log').innerHTML = '<p>Failed to load posts.</p>';
+    document.querySelector('.dev-log').innerHTML = errorHtml;
 });
 
 // <div class="post-content">${contentPreview}</div>

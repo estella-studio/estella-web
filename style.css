@@ -638,6 +638,18 @@ body
     font-size: 1.5vh;
 }
 
+.post-error
+{
+    font-size: 3vh;
+    text-align: left;
+}
+
+.post-error a
+{
+    color: inherit;
+    text-decoration: underline;
+}
+
 .dev-log-link
 {
     transition: all 0.25s ease;
@@ -914,6 +926,12 @@ body
     {
         margin: 1.5vw;
         font-size: 1.5vh;
+    }
+
+    .post-error
+    {
+        font-size: 2vh;
+        align-self: center;
     }
 
     .dev-log-link
