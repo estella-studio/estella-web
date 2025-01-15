@@ -50,7 +50,7 @@ body
     height: 100vh;
     scroll-behavior: smooth;
     overflow: auto;
-    scroll-snap-type: y mandatory; /* Disable to keep scroll position on reload */
+    /* scroll-snap-type: y mandatory; /* Disable to keep scroll position on reload */
 }
 
 .section

@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* Dev Log last n posts */
 
-fetch('https://www.omgubuntu.co.uk/wp-json/wp/v2/posts?per_page=3&_embed=true')
+fetch('https://dev.estellastudiodev.com/wp-json/wp/v2/posts?per_page=3&_embed=true')
 .then(response => response.json())
 .then(posts => {
     let postsHtml = '';
