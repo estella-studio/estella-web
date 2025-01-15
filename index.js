@@ -263,3 +263,50 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+/* Dev Log last n posts */
+
+fetch('https://dev.estellastudiodev.com/wp-json/wp/v2/posts?per_page=3&_embed=true')
+.then(response => response.json())
+.then(posts => {
+    let postsHtml = '';
+    posts.forEach(post => {
+        let featuredImage = post._embedded['wp:featuredmedia'] ? post._embedded['wp:featuredmedia'][0].source_url : '';
+        let postTitle = post.title.rendered.substring(0, 64) + (post.title.rendered.length > 64 ? '...' : '');
+        let postContent = post.content.rendered.substring(0, 32) + (post.content.rendered.length > 32 ? '...' : '');
+        postsHtml += `
+            <div class="post">
+                <a class="post-link" href="${post.link}" target="_blank"></a>
+                <div class="post-content">
+                    <div class="post-content-featured-image">${featuredImage ? `<img src="${featuredImage}" alt="${post.title.rendered}"/>` : ''}</div>
+                    <div class="post-content-title">${postTitle}</div>
+                </div>
+                <div class="post-date">${new Date(post.date).toISOString().split('T')[0]}</div>
+            </div>
+        `;
+    });
+    document.querySelector('.dev-log').innerHTML = postsHtml;
+})
+.catch(error => {
+    let errorHtml =
+    `
+        <div class="post-error">
+            <div class="post-error-message">
+                <p>Error fetching post</p>
+            </div>
+            <div class="post-error-visit-page">
+                <t>Please visit </t>
+                <a
+                    href="https://dev.estellastudiodev.com";
+                    target="_blank";
+                >this page</a>
+                <t> to view dev log</t>
+            </div>
+        </div>
+    `;
+    console.error('Error fetching posts:', error);
+    document.querySelector('.dev-log').innerHTML = errorHtml;
+});
+
+// <div class="post-content">${contentPreview}</div>
+// <div class="post-content-content">${postContent}</div>
