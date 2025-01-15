@@ -596,6 +596,7 @@ body
     transition: all 0.25s ease;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 25vw;
     height: 35vh;
@@ -616,25 +617,38 @@ body
     transform: scale(1.1);
 }
 
-.post img
+.post-content
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-size: 1.75vh;
+}
+
+.post-content-featured-image img
 {
     margin-top: 2vh;
     margin-bottom: 2vh;
-    width: 15vw;
+    width: 10vw;
     border-radius: 5px;
 }
 
-.post-content
+.post-content-title
 {
-    justify-content: center;
-    font-size: 1.75vh;
+    text-align: center;
+}
+
+.post-content-content
+{
+    text-align: left;
+    margin-left: 2vw;
 }
 
 .post-date
 {
     align-self: flex-end;
     margin: 1vw;
-    text-align: left;
+    text-align: right;
     font-size: 1.5vh;
 }
 
