@@ -550,19 +550,20 @@ body
     gap: 3vw;
 }
 
-.footer-upper-game-store
+.footer-right-game-store
 {
-    align-self: flex-end;
-    margin: 2vw;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
 }
 
-.get-game-text
+.footer-right-game-store-get-game-text
 {
     align-self: center;
+    /* text-align: center; */
 }
 
-.game-store
+.footer-right-game-store-game-list
 {
     align-self: flex-end;
     display: flex;
@@ -570,16 +571,16 @@ body
     gap: 2vw;
 }
 
-.game-store img
+.footer-right-game-store-game-list img
 {
     transition: all 0.25s ease;
     height: 5vh;
 }
 
-.game-store img:hover
+.footer-right-game-store-game-list img:hover
 {
     transition: all 0.25s ease;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .dev-log
@@ -751,14 +752,13 @@ body
     right: 0;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-end;
     gap: 2vh;
 }
 
 .footer-right-links
 {
     display: flex;
-    align-self: flex-end;
     flex-direction: column;
     justify-content: flex-end;
     gap: 2.5vh;
