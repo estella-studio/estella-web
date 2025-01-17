@@ -931,6 +931,11 @@ body
         height: 50vh;
     }
 
+    .post
+    {
+        height: 32.5vh;
+    }
+
     .post img
     {
         width: 20vw;
@@ -968,5 +973,10 @@ body
     {
         display: none;
         visibility: hidden;
+    }
+
+    .footer-right-game-store-game-list img:hover
+    {
+        transform: scale(1.1);
     }
 }
