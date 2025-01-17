@@ -750,7 +750,7 @@ body
 {
     right: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 2vh;
 }
@@ -758,10 +758,9 @@ body
 .footer-right-links
 {
     display: flex;
+    align-self: flex-end;
     flex-direction: column;
     justify-content: flex-end;
-    margin-left: auto;
-    margin-bottom: auto;
     gap: 2.5vh;
 }
 
