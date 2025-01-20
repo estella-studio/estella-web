@@ -66,6 +66,7 @@ body
     background: url(assets/pictures/background/background-0.png);
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .section:nth-child(2)
@@ -641,9 +642,10 @@ body
     justify-content: center;
     margin-right: 5vw;
     margin-bottom: 5vh;
-    font-size: 1.75vh;
-    background-color: rgba(0, 128, 0, 0.658);
+    width: 7.5vw;
+    height: 7.5vh;
     border-radius: 5px;
+    background-color: rgba(0, 128, 0, 0.63);
 }
 
 .dev-log-link:hover
@@ -652,17 +654,19 @@ body
     transform: scale(1.1);
 }
 
-.dev-log-link-view-more
+.dev-log-link-link
 {
+    cursor: pointer;
     position: absolute;
-    height: 100%;
-    width: 100%;
+    width: 7.5vw;
+    height: 7.5vh;
 }
 
-.dev-log-link-text,
-.dev-log-link-visit-page
+.dev-log-link-text
 {
-    margin: 1vh;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.75vh;
 }
 
 .footer
@@ -957,10 +961,10 @@ body
         align-self: center;
     }
 
-    .dev-log-link
+    .dev-log-link,
+    .dev-log-link-link
     {
-        font-size: 1.5vh;
-        height: 5vh;
+        width: 17.5vw;
     }
 
     .footer-right-game-store-game-list img:hover
