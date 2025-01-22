@@ -249,20 +249,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* Video audio control */
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () =>
+{
     const muteButton = document.querySelector('.main-video-audio-control');
     const mainVideo = document.getElementById('main-video');
+    const muteImage =
+    `
+        <img src="assets/pictures/section-3/sound-high.svg">
+    `
+    const unmuteImage =
+    `
+        <img src="assets/pictures/section-3/sound-off.svg">
+    `
 
-    muteButton.addEventListener('click', () => {
-        if (mainVideo.muted) {
+    muteButton.addEventListener('click', () =>
+    {
+        if (mainVideo.muted)
+        {
             mainVideo.muted = false;
-            muteButton.textContent = 'Mute';
-        } else {
+            muteButton.innerHTML = unmuteImage;
+        }
+        else
+        {
             mainVideo.muted = true;
-            muteButton.textContent = 'Unmute';
+            muteButton.innerHTML = muteImage
         }
     });
 });
+
+// const mainVideo = document.querySelectorAll('.main-video');
+// const muteButton = document.querySelectorAll('.main-video-audio-control');
+// muteButton.addEventListener("click",muteVideo,false);
+
+// function muteVideo()
+// {
+//     if (mainVideo.muted)
+//     {
+//         mainVideo.muted = false;
+//         muteButton.innerHTML = "Mute";
+//     }
+//     else
+//     {
+//         mainVideo.muted = true;
+//         muteButton.innerHTML = "Unmute";
+//     }
+// }
 
 /* Dev Log last n posts */
 
