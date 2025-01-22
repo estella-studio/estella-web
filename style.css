@@ -375,12 +375,13 @@ body
     transition: all 0.25s ease;
     align-self: flex-end;
     background-color: white;
-    border-radius: 2.5px;
+    border-radius: 2.25px;
 }
 
 .main-video-audio-control img
 {
-    margin: 0.35vw;
+    margin-top: 0.35vh;
+    margin-inline: 0.5vw;
     width: 2vw;
 }
 
