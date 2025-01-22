@@ -380,7 +380,7 @@ body
 
 .main-video-audio-control img
 {
-    margin-top: 0.35vh;
+    margin-top: 0.5vh;
     margin-inline: 0.5vw;
     width: 2vw;
 }
@@ -883,6 +883,12 @@ body
     .video-frame img
     {
         transform: scale(0.99999999) translateX(-5.95%) translateY(-11.96%); /* DO NOT CHANGE */
+    }
+
+    .main-video-audio-control img
+    {
+        margin-inline: 2vw;
+        width: 7.5vw;
     }
 
     .video-selector
