@@ -66,6 +66,7 @@ body
     background: url(assets/pictures/background/background-0.png);
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .section:nth-child(2)
@@ -550,38 +551,6 @@ body
     gap: 3vw;
 }
 
-.footer-upper-game-store
-{
-    align-self: flex-end;
-    margin: 2vw;
-    color: white;
-}
-
-.get-game-text
-{
-    align-self: center;
-}
-
-.game-store
-{
-    align-self: flex-end;
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-}
-
-.game-store img
-{
-    transition: all 0.25s ease;
-    height: 5vh;
-}
-
-.game-store img:hover
-{
-    transition: all 0.25s ease;
-    transform: scale(1.1);
-}
-
 .dev-log
 {
     display: flex;
@@ -600,7 +569,7 @@ body
     justify-content: space-between;
     width: 25vw;
     height: 35vh;
-    background-color: rgba(0, 128, 58, 0.808);
+    background-color: #05408de1;
     border-radius: 5px;
 }
 
@@ -667,14 +636,16 @@ body
 .dev-log-link
 {
     transition: all 0.25s ease;
+    align-self: flex-end;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-right: 5vw;
-    height: 15vh;
-    width: 10vw;
-    background-color: rgba(0, 128, 0, 0.658);
+    margin-bottom: 5vh;
+    width: 7.5vw;
+    height: 7.5vh;
     border-radius: 5px;
+    background-color: rgba(0, 128, 0, 0.63);
 }
 
 .dev-log-link:hover
@@ -683,17 +654,19 @@ body
     transform: scale(1.1);
 }
 
-.dev-log-link-view-more
+.dev-log-link-link
 {
+    cursor: pointer;
     position: absolute;
-    height: 15vh;
-    width: 10vw;
+    width: 7.5vw;
+    height: 7.5vh;
 }
 
-.dev-log-link-text,
-.dev-log-link-visit-page
+.dev-log-link-text
 {
-    margin: 1vh;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.75vh;
 }
 
 .footer
@@ -702,10 +675,10 @@ body
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: gray;
+    background-color: rgb(182, 182, 182);
     border-radius: 10px;
     margin: 1vw;
-    box-shadow: 0px 0px 0.5vw white;
+    box-shadow: 0px 0px 0.75vw white;
 }
 
 .footer-left,
@@ -749,8 +722,8 @@ body
 {
     right: 0;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: flex-end;
     gap: 2vh;
 }
 
@@ -759,8 +732,6 @@ body
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-left: auto;
-    margin-bottom: auto;
     gap: 2.5vh;
 }
 
@@ -790,6 +761,39 @@ body
     color: black;
     font-size: 1.75vh;
     gap: 2vw;
+}
+
+.footer-right-game-store
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: black;
+}
+
+.footer-right-game-store-get-game-text
+{
+    align-self: center;
+}
+
+.footer-right-game-store-game-list
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.footer-right-game-store-game-list img
+{
+    transition: all 0.25s ease;
+    height: 5vh;
+}
+
+.footer-right-game-store-game-list img:hover
+{
+    transition: all 0.25s ease;
+    transform: scale(1.2);
 }
 
 /* Mobile view */
@@ -923,12 +927,21 @@ body
 
     .footer-upper
     {
+        flex-direction: column;
+        justify-content: flex-end;
         height: 50vh;
+        gap: 0vh;
     }
 
     .footer
     {
         height: 50vh;
+    }
+
+    .post,
+    .post-link
+    {
+        height: 32.5vh;
     }
 
     .post img
@@ -948,25 +961,14 @@ body
         align-self: center;
     }
 
-    .dev-log-link
+    .dev-log-link,
+    .dev-log-link-link
     {
-        font-size: 1vh;
-        height: 5vh;
+        width: 17.5vw;
     }
 
-    .dev-log-link-view-more
+    .footer-right-game-store-game-list img:hover
     {
-        height: 5vh;
-    }
-
-    .dev-log-link-visit-page
-    {
-        margin: 0.5vw;
-    }
-
-    .dev-log-link-text
-    {
-        display: none;
-        visibility: hidden;
+        transform: scale(1.1);
     }
 }
