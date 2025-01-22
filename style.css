@@ -863,20 +863,25 @@ body
 
     .video
     {
-        margin-top: 50%;
         flex-direction: column-reverse;
         align-items: center;
         gap: 17.5vh;
     }
 
-    .main-video
+    .video-player
     {
-        width: 70vw;
+        gap: 5vw;
     }
 
-    .video-frame
+    .main-video img,
+    .main-video video
     {
-        transform: translateX(-4.65vw) translateY(-6.6vw); /*Temp adjust frame position */
+        width: 70vw; /* Adjust video and frame size */
+    }
+
+    .video-frame img
+    {
+        transform: scale(0.99999999) translateX(-5.95%) translateY(-11.96%); /* DO NOT CHANGE */
     }
 
     .video-selector
