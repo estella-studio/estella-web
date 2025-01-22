@@ -337,7 +337,11 @@ body
 
 .video
 {
-    margin-top: max(7.5vh, 7.5vw);
+    z-index: 1;
+    position: absolute;
+    top: 250%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-40%);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -360,40 +364,36 @@ body
     gap: 2vw;
 }
 
-.main-video
+.main-video img,
+.main-video video
 {
-    width: 35.6vw;
+    width: 30vw; /* Adjust video and frame size */
 }
 
 .main-video-audio-control
 {
     transition: all 0.25s ease;
     align-self: flex-end;
-    height: 5vh;
-    width: 10vw;
-    font-size: 1.5vh;
-    font-family: "Funnel Sans";
-    border-radius: 5px;
-    border: none;
+    background-color: white;
+    border-radius: 2.25px;
+}
+
+.main-video-audio-control img
+{
+    margin-top: 0.5vh;
+    margin-inline: 0.5vw;
+    width: 2vw;
 }
 
 .main-video-audio-control:hover
 {
     transition: all 0.25s ease;
-    transform: scale(1.05);
-    background-color: rgb(190, 190, 190);
-    box-shadow: 0px 0px 1vh white;
-}
-
-.video-frame
-{
-    z-index: 1;
-    transform: translateX(-2.33vw) translateY(-3.4vw); /*Temp adjust frame position */
+    transform: scale(1.1);
 }
 
 .video-frame img
 {
-    width: 40vw;
+    transform: scale(1.1239) translateX(-0.357%) translateY(-6.23%); /* DO NOT CHANGE */
 }
 
 .video-selector
@@ -845,7 +845,7 @@ body
 
     .screenshot-frame img
     {
-        transform: translate(0.09%, -0.5%); /* Adjust to image */
+        transform: translateX(0.09%, -0.5%); /* DO NOT CHANGE */
     }
 
     .screenshot-arrow-left img,
@@ -864,20 +864,31 @@ body
 
     .video
     {
-        margin-top: 50%;
         flex-direction: column-reverse;
         align-items: center;
         gap: 17.5vh;
     }
 
-    .main-video
+    .video-player
     {
-        width: 70vw;
+        gap: 5vw;
     }
 
-    .video-frame
+    .main-video img,
+    .main-video video
     {
-        transform: translateX(-4.65vw) translateY(-6.6vw); /*Temp adjust frame position */
+        width: 70vw; /* Adjust video and frame size */
+    }
+
+    .video-frame img
+    {
+        transform: scale(0.99999999) translateX(-5.95%) translateY(-11.96%); /* DO NOT CHANGE */
+    }
+
+    .main-video-audio-control img
+    {
+        margin-inline: 2vw;
+        width: 7.5vw;
     }
 
     .video-selector
