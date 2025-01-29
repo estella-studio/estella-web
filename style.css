@@ -119,6 +119,11 @@ body
     height: 7vh;
 }
 
+.studio-logo img
+{
+    border-radius: 5px;
+}
+
 .social-links a
 {
     text-decoration: inherit;
@@ -188,7 +193,6 @@ body
 .game-information img
 {
     height: 10vw;
-    max-height: 300px;
 }
 
 .arrow-down
@@ -217,13 +221,18 @@ body
 
 /* Section 2 */
 
+.section-2
+{
+    display: flex;
+    justify-content: center;
+}
+
 .screenshot
 {
-    position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    top: 5vh;
 }
 
 .screenshot-main-content
@@ -323,6 +332,13 @@ body
 
 /* Section 3 */
 
+.section-3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .picture-top-layer
 {
     z-index: 1;
@@ -338,10 +354,6 @@ body
 .video
 {
     z-index: 1;
-    position: absolute;
-    top: 250%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-40%);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -403,6 +415,7 @@ body
     flex-direction: column;
     align-items: flex-start;
     gap: 2vw;
+    transform: translateY(-7.5%);
 }
 
 .video-thumbnail-frame
